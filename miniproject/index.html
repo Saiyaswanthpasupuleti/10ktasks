@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="../bootstrap-5.3.3-dist/css/bootstrap.rtl.min.css">
+    <script src="../bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+    <style>
+ /* @media screen and (min-width:1440px) { */
+            
+        body{
+            box-sizing: border-box;
+            margin: 0%;
+            padding: 0%;
+        }
+        .image1{
+            transition: all;
+            animation-iteration-count: infinite;
+            animation-name: img1;
+            animation-duration: 5s;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: 0%;
+            animation-direction: alternate-reverse;
+            
+            
+        }
+        /* @keyframes img1 {
+            from{ transform: scale(1.1,1.1);}
+            to{ transform: scale(1.2,1.2);}
+            
+        }  */
+         
+        /* sentara logo start */
+            .page1{
+                margin-top:-947px;
+                margin-left:3px;
+                position: fixed;
+               
+                
+            }
+            .sentra{
+                /* border: 2px solid black; */
+                height: 120px;
+                width: 350px;
+                background-color: rgb(76, 76, 200);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                opacity: 0.96;
+                /* margin-top:-750px; */
+            }
+            .sentara1{
+                /* border: 0.6px solid white; */
+                height: 90px;
+                width: 290px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                animation-name: ab;
+                animation-duration: 3s;
+                animation-direction: alternate-reverse;
+                animation-iteration-count: infinite;
+                
+            }
+            @keyframes ab {
+                from{transform: scale(1.7,1.7)};
+                to{transform: scale(2,2);}
+                
+            }
+            
+            .sentra:hover{
+                background-color: rgb(76, 76, 200);
+
+            }
+        /* sentara logo end */
+        /* nav bar starts */
+        .menu{
+            border: 0.6px solid black;
+            height: 810px;
+            width: 350px;
+            background-color: black;
+            color: white;
+            display: flex;
+            align-items: center;
+            opacity: 0.9;
+            
+        }
+        .menu2{
+            display: flex;
+            column-gap: 15px;
+            margin-top: 760px;
+            margin-left: -160px;
+            list-style: none;
+            
+            
+        }
+        .one,.two,.three,.four,.five{
+            font-size: 21px;
+        }
+        .one:hover{
+            transform: translateY(-20px);
+            transition-duration: 1s;
+            font-size: 30px;
+            
+        }
+        .two:hover{
+            transform: translateY(-20px);
+            transition-duration: 1s;
+            font-size: 30px;
+
+            
+        }
+        .three:hover{
+            transform: translateY(-20px);
+            transition-duration: 1s;
+            font-size: 30px;
+
+            
+        }
+        .four:hover{
+            transform: translateY(-20px);
+            transition-duration: 1s;
+            font-size: 30px;
+
+            
+        }
+        .five:hover{
+            transform: translateY(-20px);
+            transition-duration: 1s;
+            font-size: 30px;
+
+            
+        }
+
+        .all{
+            display: flex;
+            flex-direction: column;
+            row-gap:25px;
+            justify-content: flex-start;
+            font-size: 20px;
+            margin-left: 30px;
+            
+        }
+       
+        #home:hover{
+            transform: translateX(30px);
+            transition-duration: 1s;
+        }
+        .Featured:hover{
+            transform: translateX(30px);
+            transition-duration: 1s;
+        }
+        .Recent:hover{
+            transform: translateX(30px);
+            transition-duration: 1s;
+        }
+        .Presentation:hover{
+            transform: translateX(30px);
+            transition-duration: 1s;
+        }
+        .Blog:hover{
+            transform: translateX(30px);
+            transition-duration: 1s;
+        }
+        .Contact:hover{
+            transform: translateX(30px);
+            transition-duration: 1s;
+        }
+        
+        /* nav bar ends */
+       
+         .content{
+            margin-top: -920px;
+            margin-left: 1520px; 
+            display: flex;
+            
+            
+            
+
+        } 
+        .button{
+            display: flex;
+            flex-direction: row;
+            column-gap: 20px;
+            
+            
+        }
+        .button1,.twobutton{
+            border: 1px solid black;
+            width: 50px;
+            height: 51px;
+            background-color: black;
+            opacity: 0.5;
+            color: white;  
+            position: relative;
+            
+        }
+        .text{
+            font-size: 50px;
+            color: white;
+            margin-top: 150%;
+            margin-left:-200%;   
+        }
+        .text1{
+            font-size: 50px;
+            color: white;
+            margin-left: -160px;
+            margin-top: -40px;  
+        }
+        .text2{
+            font-size: 20px;
+            color: white;
+            margin-top: -9%;
+            margin-left:-270%;   
+        }
+        .text3{
+            font-size: 20px;
+            color: white;
+            margin-top: -9%;
+            margin-left:-155%;   
+        }
+        .new{
+           
+            color: white;
+            margin-top: 22%;
+            margin-left:-75%; 
+            border: 2px solid white;
+            height: 50px;
+            text-align: center;
+            width: 150px;  
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            color: rgb(115, 115, 174);
+        }
+        .new:hover{
+            background-color: black;
+            color: rgb(115, 115, 174);
+            transition: all;
+            transition-duration: 0.7s;
+        }
+
+        .ap{
+            /* position: relative; */
+            margin-left: -25px;
+            margin-top: -20px;
+        }
+      .home1{
+        text-decoration: none;
+        color: white;
+      }
+      .Featured2{
+        text-decoration: none;
+        color: white;
+      }
+      .r1{
+        text-decoration: none;
+        color: white;
+      }
+      .p1{
+        text-decoration: none;
+        color: white;
+      }
+      .b1{
+        text-decoration: none;
+        color: white;
+      }
+      .c1{
+        text-decoration: none;
+        color: white;
+      }
+      #main{
+        border: 2px solid white;
+        height: 101vh;
+        width: 104vw;
+        
+      }
+      #main2{
+       position: absolute;
+       border: 2px solid white;
+       margin-left: 380px;
+       height: 850px;
+       width: 1300px;
+       margin-top:145px;
+       padding-top: -40px;
+       
+      }
+      #main3{
+        position: absolute;
+       border: 2px solid white;
+       margin-left: 380px;
+       height: 890px;
+       width: 1300px;
+       margin-top:1050px;
+       padding-top: -40px;
+      }
+
+      #main4{
+        position: absolute;
+       border: 2px solid white;
+       margin-left: 380px;
+       height: 950px;
+       width: 1300px;
+       margin-top:1990px;
+       padding-top: -40px;
+      }
+      #main5{
+        position: absolute;
+       border: 2px solid white;
+       margin-left: 380px;
+       height: 990px;
+       width: 1300px;
+       margin-top:2940px;
+       
+      }
+      #main6{
+        position: absolute;
+       border: 2px solid white;
+       margin-left: 380px;
+       height: 990px;
+       width: 1300px;
+       margin-top:3890px;
+       
+      }
+
+
+      /*  */
+      .fp{
+        display: flex;
+        flex-direction: row;
+        margin-left: 2%;
+        margin-top: 2%;
+        position: relative;
+
+        
+      }
+      .texts,.di{
+       margin-top: 25px;
+       margin-left: 60px;
+       font-size: 18px;
+       
+      }
+      .lr{
+            display: flex;
+            position: absolute;
+            margin-left: 1150px;
+            column-gap: 20px;
+            margin-top: -85px;   
+      }
+     .a1,.a2{
+        border: 2px solid black;
+        background-color: black;
+        opacity: 0.5;
+        width: 50px;
+     }
+     .threeim{
+        display: flex;
+        column-gap: 40px;
+        margin-top: 75px;
+        margin-left: 70px;
+     }
+     .aw{
+        display: flex;
+        margin-top: 50px;
+        margin-left: 50px;
+     }
+     .cr{
+        display: grid;
+        height: 700px;
+        width: 1200px;
+        
+        margin-left: 70px;
+        margin-top: 30px;
+        column-gap: 7px;
+        row-gap: 3px;
+        grid-template-areas:"a a b"
+                            "a a c"
+                            "d d e";
+     }
+     .class1{
+        grid-area: a;
+        background-image: url(./drive-download-20240718T125307Z-001/portfolio_1.jpg);
+        background-size: cover;
+     
+     }
+     .class2{
+        grid-area: b;
+        background-image: url(./drive-download-20240718T125307Z-001/portfolio_2.jpg);
+        background-size: cover;
+      
+     }
+     .class3{
+        grid-area: c;
+        background-image: url(./drive-download-20240718T125307Z-001/portfolio_3.jpg);
+        background-size: cover;
+       
+     }
+     .class4{
+        grid-area: d;
+        background-image: url(./drive-download-20240718T125307Z-001/portfolio_4.jpg);
+        background-size: cover;
+    
+     }
+     .class5{
+        grid-area: e;
+        background-image: url(./drive-download-20240718T125307Z-001/portfolio_5.jpg);
+        background-size: cover;
+        
+     }
+     .main41{
+        margin-top: 30px;
+        text-align: center;
+     }
+    .awf{
+        /* font-size: 18px; */
+        margin-left: 75px;
+    }
+    .av{
+        text-align: center;
+        margin-top: -10px;
+    }
+    .dwg video{
+        margin-left: 50px;
+        margin-top: 60px;
+        height: 600px;
+        width: 1200px;
+        
+    }
+.centere{
+    border: 2px solid white;
+    width: 160px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 560px;
+    color: white;
+    background-color:  rgb(76, 76, 200);
+    
+}
+.z{
+    display: flex;
+    margin-left: 40px;
+    margin-top: 50px;
+}
+.c{
+   color: rgb(76, 76, 200); 
+}
+.x{
+    margin-top: 20px;
+    margin-left: 40px;
+    font-size: 18px;
+}
+.in{
+    display: flex;
+    gap: 120px;
+    border: 2px solid white;
+    height: 80px;
+    width: 1270px;
+    margin-left: 40px;
+    margin-top: 40px;
+   
+}
+.d1{
+    border: 1px solid white;
+    height: 70px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(76, 76, 200) ;
+    color: white;
+}
+.d2{
+    border: 1px solid white;
+    height: 50px;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(136, 129, 129);
+    color: white;
+}
+.d3{
+    border: 1px solid white;
+    height: 50px;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(136, 129, 129);
+    color: white;
+}
+.d4{
+    border: 1px solid white;
+    height: 50px;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(136, 129, 129) ;
+    color: white;
+}
+.con{
+    /* border: 2px solid black;
+    height: 710px;
+    width: 1180px; */
+    margin-left: 40px;
+   
+    display: flex;
+    flex-direction: column;
+    row-gap: 35px;
+}
+.blog1,.blog2,.blog3{
+    display: flex;
+    column-gap: 10px;
+    
+}
+.af{
+    border: 2px solid white;
+    width: 160px;
+    height: 50px;
+    color: white;
+    background-color:  rgb(76, 76, 200);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.map{
+    height: 400px;
+    width: 1200px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.last{
+    display: flex;
+    margin-top: 30px;
+    margin-left: 35px;
+}
+.info{
+    display: flex;
+    column-gap: 50px;
+    margin-left: 40px;
+}
+.za{
+    border: 2px solid whitesmoke;
+    height: 40px;
+    width: 350px;
+    background-color: whitesmoke;
+    /* margin-left: 40px;
+    margin-top: 30px; */
+}
+.zb{
+    border: 2px solid whitesmoke;
+    height: 40px;
+    width: 350px;
+    background-color: whitesmoke;
+    /* margin-left: 40px;
+    margin-top: 30px; */
+}
+.textsvf{
+    margin-left: 40px;
+    margin-top: 15px;
+    
+}
+.ha{
+    background-color: whitesmoke;
+
+}
+.df{
+    border: 1px solid black;
+    height: 30px;
+    width: 1186px;
+    margin-left: 40px;
+    background-color: rgb(76, 76, 200);
+    color: white;
+}
+.an{
+    border: 2px solid black;
+    height: 76px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1350px;
+    position: absolute;
+    margin-left: -40px;
+    background-color: black;
+    color: white;
+    opacity: 0.9;
+    margin-top: 12px;
+   
+}
+ 
+    </style>
+</head>
+<body>
+ <div id="main">   
+        <div class="bagground">
+                
+            <div class="image1"><img src="./drive-download-20240718T125307Z-001/slide_1.jpg" height="950px"></div>
+        </div>
+
+        <div class="page1">
+                <!-- sentara blog -->
+            <div class="sentra"><p style="color: white; font-size: 27px;" class="sentara1"><b style="font-size: 27px; font-family: Arial, Helvetica, sans-serif;">SĚN</b>ŤrǍ</p>
+        </div>
+                <!-- nav bar start -->
+            <div class="menu">
+                <ul class="all">
+                    <li id="home"><a class="home1" href="#main">Home</a></li>
+                    <li class="Featured"><a class="Featured2" href="#main2">Featured</a></li>
+                    <li class="Recent"><a class="r1" href="#main3">Recent Work</a></li>
+                    <li class="Presentation"><a class="p1" href="#main4">Presentation</a></li>
+                    <li class="Blog"><a class="b1" href="#main5">Blog Entires</a></li>
+                    <li class="Contact"><a class="c1" href="#main6">Contact Us</a></li>
+                </ul>
+                <ul class="menu2">
+                    <li class="one"><ion-icon name="logo-facebook"></ion-icon></li>
+                    <li class="two"> <ion-icon name="logo-twitter"></ion-icon></li>
+                    <li class="three"> <ion-icon name="logo-linkedin"></ion-icon></li>
+                    <li class="four"><ion-icon name="wifi-outline"></ion-icon></li>
+                    <li class="five"><ion-icon name="logo-behance"></ion-icon></li>
+                </ul>
+            </div>
+            <!-- nav bar close -->
+        </div> 
+    <div class="content">
+        <div class="button">
+         <p class="button1"><img src="./drive-download-20240718T125307Z-001/prev.png"></p>
+         <p class="twobutton"><img src="./drive-download-20240718T125307Z-001/next.png"></p>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+        
+        </div>
+    <div class="ap">
+        <p class="text">Beautiful Template</p>
+        <p class="text1">Sentara</p>
+        <p class="text2">This is a Html and Css Template Provided Templatemo Website</p>
+        <p class="text3">Please tell your freinds about our site</p>
+        <p class="new">Discover More</p>
+    </div>
+    </div>
+
+</div>
+
+<div id="main2">
+    <div class="fp">
+        <h1>Featured<br><span style="color: rgb(76, 76, 200);">Places</span></h1>
+        <p class="texts">Praesent pellentesque efficitur magna<br>sed pellentesque neque malesuada vitae</p>
+    </div>
+
+    <div class="lr">
+        <p class="a1"><img src="./drive-download-20240718T125307Z-001/prev.png"></p>
+        <p class="a2"><img src="./drive-download-20240718T125307Z-001/next.png"></p> 
+    </div>
+    
+    <div class="threeim">
+       <div> <p class="o1"><img src="./drive-download-20240718T125307Z-001/featured_1.jpg" height="400px"></p>
+        <h4>Lorem ipsum dolor</h4>
+        <h6>Proin et Sapien</h6>
+        <p>#You are allowed to use Sentra Templatefor your<br>bussiness or client website.You can use it for the<br>Commercial or education purpose</p>
+    </div>
+      <div> <p class="o2"><img src="./drive-download-20240718T125307Z-001/featured_2.jpg" height="400px"></p>
+        <h4>Phaellus a lacusac odio</h4>
+        <h6>Maximus</h6>
+        <p>#You are allowed to use Sentra Templatefor your<br>bussiness or client website.You can use it for the<br>Commercial or education purpose</p>
+    </div>
+      <div>  <p class="o3"><img src="./drive-download-20240718T125307Z-001/featured_3.jpg" height="400px"></p>
+        <h4>Proin Sit amet fringilla</h4>
+        <h6>Vulputate</h6>
+        <p>#You are allowed to use Sentra Templatefor your<br>bussiness or client website.You can use it for the<br>Commercial or education purpose</p>
+    </div>
+
+    </div>
+</div>
+
+<div id="main3">
+    <div class="aw"><h1>Recent<br><span style="color: rgb(76, 76, 200);">Projects</span></h1>
+        <p class="di">Praesent pellentesque efficitur magna<br>sed pellentesque neque malesuada vitae</p>
+    </div>
+
+    <div class="cr">
+        <p class="class1"></p>
+        <p class="class2"></p>
+        <p class="class3"></p>
+        <p class="class4"></p>
+        <p class="class5"></p>
+       
+    </div>
+</div>
+
+<div id="main4">
+    <div class="main41"><h1>This is a <span style="color:rgb(76, 76, 200);">Company</span> Presentation</h1>
+    <h6>Praesent pellentesque efficitur magna, sed pellentesque neque malesuada vitae.</h6></div><br>
+    <div ><p class="awf">In eget ipsum sed lorem vehicula luctus. Curabitur non dolor rhoncus, hendrerit justo sit amet, vestibulum turpis. Pellentesque id auctor tellus, vel ultricies</p> <p class="av">augue. Duis condimentum aliquet blandit. Fusce rhoncus et eros ut pharetra. Phasellus convallis ultricies ligula ac gravida.</span></p></div>
+    <div><h6 class="centere">Continue Reading</h6></div>
+    <div class="dwg">
+        <video controls>
+            <source src="./drive-download-20240718T125307Z-001/Sentra HTML CSS Template.mp4">
+        </video>
+    </div>
+</div>
+
+<div id="main5">
+    <div class="z">
+        <h1>Blog<br>
+        <span class="c">Entires</span></h1>
+        <p class="x">Curabitur hendrerit mauris mollis ipsum vulputate rutrum.<br>
+            Phasellus luctus odio eget dui imperdiet.</p>
+    </div>
+    <div class="dates">
+        <div class="in">
+            <h3 class="d1">July 2018</h3>
+            <h3 class="d2">July 2018</h3>
+            <h3 class="d3">May 2018</h3>
+            <h3 class="d4">April 2018</h3>
+        </div>
+    </div>
+    <div class="con">
+        <div class="blog1">
+           
+            <img src="./drive-download-20240718T125307Z-001/blog_1.jpg" height="200">
+            <div><h3>Integer ultrices augue</h3>
+            <h5>25 July 2018</h5>
+            <p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus. Nam finibus, mauris eu dictum iaculis, dolor tortor cursus<br>
+                quam, in volutpat augue lectus sed magna. Integer mollis lorem quis ipsum maximus finibus.
+            </p>
+            <h6 class="af">Continue Reading</h6>
+        </div>
+           
+        </div>
+        <div class="blog2">
+            <img src="./drive-download-20240718T125307Z-001/blog_2.jpg" height="200">
+            <div><h3>Cras commodo odio ut</h3>
+                <h5>16 July 2018</h5>
+                <p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus. Nam finibus, mauris eu dictum iaculis, dolor tortor cursus<br>
+                    quam, in volutpat augue lectus sed magna. Integer mollis lorem quis ipsum maximus finibus.
+                </p>
+                <h6 class="af">Continue Reading</h6>
+            </div>
+            
+        </div>
+        <div class="blog3">
+            <img src="./drive-download-20240718T125307Z-001/blog_3.jpg" height="200">
+            <div><h3>Sed at massa turpis</h3>
+                <h5>10 July 2018</h5>
+                <p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus. Nam finibus, mauris eu dictum iaculis, dolor tortor cursus<br>
+                    quam, in volutpat augue lectus sed magna. Integer mollis lorem quis ipsum maximus finibus.
+                </p>
+                <h6 class="af">Continue Reading</h6>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<div id="main6">
+    <div class="map">
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2028845.2299800382!2d-1.6197630000000003!3d6.697798!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdb96f349e85efd%3A0xb8d1e0b88af1f0f5!2sKumasi%20Central%20Market!5e0!3m2!1sen!2sus!4v1721481662702!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="last">
+        <h1>Contact<br><span style="color:rgb(76, 76, 200) ;">Sentra</span></h1>
+        <p class="di">Curabitur hendrerit mauris mollis ipsum vulputate rutrum<br>Phasellus luctus odio eget dui imperdiet.</p>
+    </div>
+    <div class="info">
+        <input type="text" id="text" name="text" placeholder="Your name..." class="za">
+        <input type="email" id="mail" name="mail" placeholder="Your email..." class="zb" required>
+        <input type="text" id="text" name="text" placeholder="Subject..." class="za">
+    </div>
+    <div class="textsvf">
+        <textarea rows="10" cols="137" id="text " name="text" class="ha">
+            
+        </textarea>   </div>
+        <input type="button" name="button" value="Send Message Now" class="df">
+        <p class="an">Copyright © 2019 Company Name . Design: TemplateMo</p>
+
+      
+</div>
+
+   
+    
+
+</div>
+
+</body>
+</html>
