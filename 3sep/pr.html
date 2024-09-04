@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="main">Click</button>
+    <h1 id="otp"></h1>
+    <h1 id="otp1"></h1>
+    <script>
+     let a=document.getElementById("main");
+
+     a.addEventListener("click",()=>{
+        let q=Math.floor(Math.random()*90000)+10000
+        let x=document.getElementById("otp")
+        x.innerHTML=q;
+     })
+
+
+    a.addEventListener("dblclick",()=>{
+        let a=document.getElementById("otp1").innerText="otp already sent"
+    })
+
+    a.addEventListener("mousedown",()=>{
+        let z=document.getElementById("main");
+        z.style.backgroundColor="yellow"
+    })
+
+    a.addEventListener("mouseup",()=>{
+        let g=document.getElementById("main");
+        g.style.backgroundColor="yellowgreen"
+    })
+
+
+    a.addEventListener("mouseover",()=>{
+        document.body.style.backgroundColor="grey"
+    })
+    </script>
+</body>
+</html>
