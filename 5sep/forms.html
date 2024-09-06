@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="../bootstrap-5.3.3-dist/css/bootstrap.rtl.min.css"
+    />
+    <script src="../bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+    <style>
+      body {
+        background-color: rgb(23, 13, 13);
+      }
+      .style {
+        color: white;
+        padding: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+      }
+      #br {
+        border: 3px solid rgb(203, 199, 191);
+        padding: 15px;
+        margin-top: 100px;
+      }
+      #content1 {
+        border: 2px solid black;
+        height: 30vh;
+        width: 15vw;
+        margin-top: 20px;
+        background-image: url(../images/depositphotos_57064869-stock-illustration-unknown-person-silhouette-whith-blue.jpg);
+        background-size: cover;
+        border-radius: 30px;
+        
+      }
+
+      #center {
+        display: flex;
+        justify-content: center;
+border: 2px solid white;
+        background-color: black;
+        border-radius: 20px;
+       background-image: url(../images/a.jpg);
+       background-size: cover;
+       
+
+      }
+
+      #content {
+    
+        color: white;
+        margin-top: 40vh;
+        margin-right: 50px;
+        margin-left: -250px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="style form-group">
+      <form id="br">
+        <label for="">Enter Your Name : </label>
+        <input type="text" id="text1" class="form-control btn btn-light" />
+        <br />
+        <br />
+        <label for="">Enter Your Age : </label>
+        <input type="number" id="text2" class="form-control btn btn-light" />
+        <br />
+        <br />
+        <label for="">Enter Your Blood Group : </label>
+        <input type="text" id="text3" class="form-control btn btn-light" />
+        <br />
+        <br />
+
+        <label for="">Enter Your date-of-birth : </label>
+        <input
+          type="date"
+          name=""
+          id="text4"
+          class="form-control btn btn-light"
+        />
+        <br />
+        <br />
+
+        <label for="">Enter Your Email : </label>
+        <input
+          type="email"
+          name=""
+          id="text5"
+          class="form-control btn btn-light"
+        />
+        <br />
+        <br />
+        <label for="">Enter Your Mobile number : </label>
+        <input
+          type="number"
+          name=""
+          id="text6"
+          class="form-control btn btn-light"
+        />
+        <br />
+        <br />
+        <div style="text-align: center; margin-top: 10px">
+          <div id="text">
+            <input type="submit" id="sub" class="btn btn-primary" />
+          </div>
+        </div>
+      </form>
+    </div>
+    <br />
+
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br />
+    <div id="center">
+      <p id="content1"></p>
+      <div id="maina">
+        <p id="content"></p>
+      </div>
+    </div>
+    <script>
+      let a = document.getElementsByTagName("form");
+
+      a[0].addEventListener("submit", (event) => {
+        event.preventDefault();
+        let input1 = document.getElementById("text1").value;
+        let input2 = document.getElementById("text2").value;
+        let input3 = document.getElementById("text3").value;
+        let input4 = document.getElementById("text4").value;
+        let input5 = document.getElementById("text5").value;
+        let input6 = document.getElementById("text6").value;
+        let content = (document.getElementById(
+          "content"
+        ).innerHTML = `<h4>Name : ${input1} <br></h4>
+        <br>
+        <h4> Age : ${input2} <br> </h4>
+         <br>
+        <h4> Blood Group : ${input3} <br> </h4>
+         <br>
+        <h4> date-of-birth : ${input4} <br> </h4>
+         <br>
+        <h4> Email : ${input5} <br> </h4>
+         <br>
+         <h4>Mobile number : ${input6}</h4>`);
+      });
+    </script>
+  </body>
+</html>
