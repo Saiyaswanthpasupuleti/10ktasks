@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+   <form id="main">
+
+    <input type="file" name="" id="f1" multiple>
+    <input type="submit" name="" id="">
+   </form>
+<img src="" id="image" alt="">
+    <script>
+        
+        let a=document.getElementById("main");
+        a.addEventListener("submit",(event)=>{
+            event.preventDefault();
+            let x=document.getElementById("f1");
+            let y=document.getElementById("image");
+
+            const a=new FileReader();
+
+            a.readAsDataURL(x.files[0]);
+
+            a.addEventListener("load",(e)=>{
+                y.setAttribute("src",e.target.result);
+                y.setAttribute("height","100px")
+            })
+
+            const reader2=new FileReader();
+            reader2.readAsDataURL(x.files[1]);
+            reader.addEventListener("load",(e)=>{
+                x[1].setAttribute("src",e.target.result)
+            })
+        })
+    
+    </script>
+</body>
+</html>
