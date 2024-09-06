@@ -6,30 +6,32 @@
     <title>Document</title>
     <style>
       #div {
-        border: 2px solid black;
-        height: 50vh;
-        width: 50vw;
+        border: 2px double black;
+       display: flex;
+       flex-wrap: wrap;
+       gap: 10px;
+       background-color: lightgoldenrodyellow;
+       border-radius: 30px;
+       
       }
     </style>
   </head>
   <body>
-    <div id="div"></div>
+    <div id="div">
+      <p id="photos"></p>
+    </div>
     <button id="btn">Click</button>
+    
     <script>
-      let a = document.getElementById("div");
-      document.body.appendChild(a);
+      
 
       let x = document.getElementById("btn");
-      x.addEventListener("click", () => {
-        let otp = Math.floor(Math.random() * img.length);
+     
+      
+     
+     
+        let img = [
 
-
-
-
-
-
-
-        let imgsrc = [
           {
             id: 1,
             title: "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
@@ -242,15 +244,46 @@
             rating: { rate: 3.6, count: 145 },
           },
         ];
+     
+        x.addEventListener("click", () => {
+          let otp = Math.floor(Math.random()*img.length);
+
+          let a = document.getElementById("div");
+          let b=document.createElement("img");
+          
+         let y= b.setAttribute("src",`${img[otp].image}`)
+          b.style.height="100px"
+          b.style.width="100px"
+
+        let z=document.createElement("h4");
+        z.style.border="2px solid black";
+         z.style.height="auto"
+          z.style.width="auto"
+  
+        z.innerHTML=`${img[otp].title}`
+
+        let w=document.createElement("h4");
+        w.innerHTML=`${img[otp].category}`
+
+
+        let e=document.createElement("h4");
+        e.innerHTML=`${img[otp].price}`;
+
+        z.appendChild(e)
+
+        z.appendChild(w)
 
 
 
-
-
-        let b = document.createElement("img");
-        b.setAttribute("src","imgsrc[otp].image");
-        a.appendChild(img);
+        a.appendChild(z)
+      
+        
+        
+     z.appendChild(b)
+       
+        
       });
+      
     </script>
   </body>
 </html>
