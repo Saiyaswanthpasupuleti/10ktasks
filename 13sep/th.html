@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let theater={
+            movie:"og",
+            screen:"screen1",
+            info:function (x,y){
+                console.log(`${this.movie} plays in ${this.screen} plays ${x}times ${y} shows a day`)
+            }
+        }
+        let theater1={
+            movie:"devara",
+            screen:"screen2",
+            info:function (x,y){
+                console.log(`${this.movie} plays in ${this.screen}plays ${x}times ${y} shows a day`)
+            }
+        }
+        let theater2={
+            movie:"ss",
+            screen:"screen3",
+            info:function (x,y){
+                console.log(`${this.movie} plays in ${this.screen}plays ${x}times ${y} shows a day`)
+            }
+        }
+    //    theater.info.call(theater1,"5","3")
+    //    theater.info.apply(theater1,["6 ","3"])
+    //    theater.info.apply(theater2,["10","20"])
+
+       let reuse=theater.info.bind(theater2,"2","3");
+       reuse()
+       reuse()
+        reuse()
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* #parent {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid black;
+        height: 300px;
+        width: 250px;
+        background-color: yellow;
+      }
+      #child {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+        height: 150px;
+        width: 150px;
+        background-color: yellowgreen;
+      } */
+    </style>
+  </head>
+  <body>
+
+      <ul id="parent">
+        <li id="mobile">Mobile</li>
+        <li id="cloth">Clothes</li>
+        <li id="watch">Watch</li>
+      </ul>
+  <p id="out"></p>
+    <script>
+     let a=document.getElementById("parent");
+     let b=document.getElementById("out")
+     a.addEventListener("click",(e)=>{
+     b.innerHTML=e.target.id
+     })
+    </script>
+  </body>
+</html>

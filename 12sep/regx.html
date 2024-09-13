@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="../bootstrap-5.3.3-dist/css/bootstrap.rtl.min.css"
+    />
+    <script src="../bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+    <style>
+      #form {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="" id="form" class="form-control bg-dark" >
+      <input
+        type="text"
+        name=""
+        id="ip1"
+        placeholder="Enter Regno:U20CN-"
+        class="form-control w-50"
+      />
+      <span id="msg1" style="color: red; display: none"
+        >Please Fill out the form</span
+      >
+      <span id="msg2" style="color: red; display: none"
+        >Length Should be 8</span
+      >
+
+      <input
+        type="text"
+        name=""
+        id="ip2"
+        placeholder="Enter Username:"
+        class="form-control w-50"
+      />
+      <span id="msg3" style="color: red; display: none"
+        >Please Fill out the form</span
+      >
+      <span id="msg4" style="color: red; display: none"
+        >Length Should be 8</span
+      >
+      <span id="msg5" style="color: red; display: none"
+        >It Should contain only alphabets</span
+      >
+
+      <input
+        type="number"
+        name=""
+        id="ip3"
+        placeholder="Enter Number:"
+        class="form-control w-50"
+      />
+      <span id="msg6" style="color: red; display: none"
+        >Mobile Number Should be 10 Digits</span
+      >
+
+      <input
+        type="password"
+        name=""
+        id="ip4"
+        placeholder="Enter password:"
+        class="form-control w-50"
+      />
+      <span id="msg7" style="color: red; display: none"
+        >Password should contain a capital letter<br />
+        small letter, number, and special character</span
+      >
+
+      <input
+        type="submit"
+        name=""
+        id="sub"
+        value="Submit"
+        class="form-control w-25 bg-primary text-light"
+      />
+    </form>
+
+    <script>
+      let form = document.getElementById("form");
+      let ip1 = document.getElementById("ip1");
+      let ip2 = document.getElementById("ip2");
+      let ip3 = document.getElementById("ip3");
+      let ip4 = document.getElementById("ip4");
+
+      let msg1 = document.getElementById("msg1");
+      let msg2 = document.getElementById("msg2");
+      let msg3 = document.getElementById("msg3");
+      let msg4 = document.getElementById("msg4");
+      let msg5 = document.getElementById("msg5");
+      let msg6 = document.getElementById("msg6");
+      let msg7 = document.getElementById("msg7");
+
+      let pattern1 = /U20CN[0-9]{8}$/;
+      let pattern2 = /^[A-Za-z]+$/;
+      let pattern3 = /^[0-9]{10}$/;
+      let pattern4 =/(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[@!#$%^&*()<>?":+_-])/;
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        if (ip1.value === "") {
+          ip1.style.border = "2px solid red";
+          msg1.style.display = "block";
+        } else if (ip1.value.length < 8) {
+          ip1.style.border = "2px solid red";
+          msg2.style.display = "block";
+        } else {
+          ip1.style.border = "2px solid green";
+          ip1.style.backgroundColor="darkgreen"
+        }
+
+        if (ip2.value === "") {
+          ip2.style.border = "2px solid red";
+          msg3.style.display = "block";
+        } else if (ip2.value.length < 8) {
+          ip2.style.border = "2px solid red";
+          msg4.style.display = "block";
+        } else if (!pattern2.test(ip2.value)) {
+          ip2.style.border = "2px solid red";
+          msg5.style.display = "block";
+        } else {
+          ip2.style.border = "2px solid green";
+          ip2.style.backgroundColor="darkgreen"
+        }
+
+        if (!pattern3.test(ip3.value)) {
+          ip3.style.border = "2px solid red";
+          msg6.style.display = "block";
+        } else {
+          ip3.style.border = "2px solid green";
+          ip3.style.backgroundColor="darkgreen"
+        }
+
+        if (!pattern4.test(ip4.value)) {
+          ip4.style.border = "2px solid red";
+          msg7.style.display = "block";
+        } else {
+          ip4.style.border = "2px solid green";
+          ip4.style.backgroundColor="darkgreen"
+        }
+      });
+    </script>
+  </body>
+</html>
