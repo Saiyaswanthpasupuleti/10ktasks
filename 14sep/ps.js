@@ -29,9 +29,10 @@
 //         res+=count+" "
 //         count++
 //     }
-//  var o=res.split(" ")
-//  var p=o.reverse().join(" ");
-//  console.log(p)
+//  var o=res.split(" ").reverse().join(" ")
+
+//  console.log(o)
+
  
 // }
 
