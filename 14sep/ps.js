@@ -55,24 +55,20 @@
 
 
 
+// let rows=prompt("enter number of rows : ")
+// count=1
+// for(let i=1;i<=rows;i++){
+//     res="";
+//     for(let j=1;j<=i;j++){
+//         res+=count+" "
+//         count++
+//     }
+//  var o=res.trim().split(" ").reverse().join(" ")
 
-// // let rows=prompt("enter number of rows : ")
-// // count=1
-// // for(let i=1;i<=rows;i++){
-// //     res="";
-// //     for(let j=1;j<=i;j++){
-// //         res+=count+" "
-// //         count++
-// //     }
-// //  var o=res.split(" ").reverse().join(" ")
-
-// //  console.log(o)
+//  console.log(o)
 
  
-// // }
-
-
-
+// }
 
 
 
