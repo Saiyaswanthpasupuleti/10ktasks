@@ -17,3 +17,21 @@
     
 //     console.log(res)
 // }
+
+
+
+
+
+// let rows=+prompt("enter rows : ");
+// for(let i=1;i<=rows;i++){
+//     res="";
+//     for(let j=1;j<=rows;j++){
+//         if(i==j || i+j==rows+1){
+//         res+=j+" "
+//         }
+//         else{
+//             res+="  "
+//         }
+//     }
+//     console.log(res)
+// }
