@@ -25,11 +25,11 @@ for(let i=1;i<=rows;i++){
     res=""
     space=""
     for(let k=1;k<=rows-i;k++){
-        space+" "
+        res+=" "
     }
     for(let j=1;j<=i;j++){
         res+=String.fromCharCode(char)
         char++
     }
-    console.log(space+res.split("").reverse().join(""))
+    console.log(res)
 }
