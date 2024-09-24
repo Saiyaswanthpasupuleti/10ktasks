@@ -19,19 +19,17 @@
 //     }
 // }
 
-
 let rows=5;
 char=65;
 for(let i=1;i<=rows;i++){
     res=""
+    space=""
     for(let k=1;k<=rows-i;k++){
-        res+=" "
+        space+" "
     }
-    temp=""
     for(let j=1;j<=i;j++){
-        temp+=String.fromCharCode(char)
+        res+=String.fromCharCode(char)
         char++
     }
-  res+=console.log(temp  .split("").reverse().join(""));
-
+    console.log(space+res.split("").reverse().join(""))
 }
