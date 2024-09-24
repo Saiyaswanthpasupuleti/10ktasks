@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap-5.3.3-dist/css/bootstrap.rtl.min.css">
+    <script src="../bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        #div1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            justify-items: center;
+        
+          
+        }
+        #div2{
+            border: 2px solid black;
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            background-color:black;   
+        }
+        
+        #row{
+            display: flex;
+            gap: 20px;
+        }
+        
+        
+        #btn{
+            height: 50px;
+            width: 50px;
+            border-radius: 50px;
+        
+        }
+        #buttons{
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+            margin-top: 70px;
+        }
+        #form{
+            height: 10vh;
+            font-size: 20px;
+            background-color: black;
+            color: white;
+        }
+       
+    </style>
+</head>
+<body>
+    
+    <div id="div1">
+        
+      <div id="div2">
+      
+        <input type="text" id="form">
+
+        <div id="buttons">
+           
+            <div id="row">
+                <button id="btn" value="AC" style="background-color: gray  ; border:  rgb(168, 163, 163) ;">AC</button>
+                <button id="btn" value="("  style="background-color: gray  ; border:  rgb(216, 211, 211) ;">(</button>
+                <button id="btn" value="%"  style="background-color: gray  ; border:  rgb(216, 211, 211) ;">%</button>
+                <button id="btn" value="/" style="background-color: rgb(247, 139, 30);border:rgb(247, 139, 30) ;">/</button>
+
+            </div>
+            <div id="row">
+                <button id="btn" value="7">7</button>
+                <button id="btn" value="8">8</button>
+                <button id="btn" value="9">9</button>
+                <button id="btn" value="*" style="background-color: rgb(247, 139, 30);border:rgb(247, 139, 30) ;">*</button>
+
+            </div>
+            <div id="row">
+                <button id="btn" value="4">4</button>
+                <button id="btn" value="5">5</button>
+                <button id="btn" value="6">6</button>
+                <button id="btn" value="-" style="background-color: rgb(247, 139, 30);border:rgb(247, 139, 30) ;">-</button>
+            </div>
+            
+
+            <div id="row">
+                <button id="btn" value="1">1</button>
+                <button id="btn" value="2">2</button>
+                <button id="btn" value="3">3</button>
+                <button id="btn" value="+" style="background-color: rgb(247, 139, 30);border:rgb(247, 139, 30) ;">+</button>
+            </div>
+            
+            <div id="row">
+                <button id="btn" value=")">)</button>
+                <button id="btn" value="0">0</button>
+                <button id="btn" value=".">.</button>
+                <button id="btn" value="=" style="background-color: rgb(247, 139, 30);border:rgb(247, 139, 30) ;">=</button>
+            </div>
+            
+               
+
+            </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+    <script>
+       let form=document.getElementById("form")
+       let button=document.querySelectorAll("#btn");
+       button.forEach(button=>{
+        button.addEventListener("click",()=>{
+            if(button.value==="AC"){
+                form.value=""
+                
+            }
+            else if(button.value==="="){
+                form.value=eval(form.value)
+            }
+            else{
+               
+                 form.value=form.value+button.value
+            }
+            
+                   
+                
+            
+        })
+       })
+    </script>
+</body>
+</html>
