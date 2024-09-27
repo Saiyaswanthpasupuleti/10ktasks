@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #grid{
+            display: grid;
+            /* border: 2px solid black; */
+            /* height: 200px; */
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto auto;
+
+        }
+        .cell{
+            border: 2px solid black;
+            display: flex;
+            row-gap: 20px;
+            height: 200px;
+            width: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="grid">
+        <div id="cell1" class="cell" onclick="function1()"></div>
+        <div id="cell2" class="cell" onclick="function2()"></div>
+        <div id="cell3" class="cell" onclick="function3()"></div>
+        <div id="cell4" class="cell" onclick="function4()"></div>
+        <div id="cell5" class="cell" onclick="function5()"></div>
+        <div id="cell6" class="cell" onclick="function6()"></div>
+        <div id="cell7" class="cell" onclick="function7()"></div>
+        <div id="cell8" class="cell" onclick="function8()"></div>
+        <div id="cell9" class="cell" onclick="function9()"></div>
+    </div>
+
+    <script>
+        let main=document.getElementById("grid")
+        function function1(){
+            let x=document.getElementById("cell1").style.backgroundImage="url('https://img.freepik.com/free-vector/new-2023-twitter-logo-x-icon-design_1017-45418.jpg?size=338&ext=jpg&ga=GA1.1.1819120589.1727222400&semt=ais_hybrid')"
+            
+        }
+        function function2(){
+            document.getElementById("cell2").style.backgroundColor="green"
+            
+        }
+    </script>
+</body>
+</html>
