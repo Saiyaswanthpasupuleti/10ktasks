@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" id="main">
+        <input type="password" id="main2">
+        <button type="button" onclick="sai()">Show Password</button>
+        <p id="main3"></p>
+    </form>
+    <script>
+        function sai(){
+        let a=document.getElementById("main2").value;
+        document.getElementById("main3").innerHTML=a;
+        }
+    </script>
+</body>
+</html>
