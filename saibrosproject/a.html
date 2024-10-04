@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JKL Healthcare System</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mt-5">JKL Healthcare System</h1>
+
+        <!-- User Registration/Login Section -->
+        <div id="auth-section" class="mt-4">
+            <h3>User Registration/Login</h3>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" class="form-control" id="username" placeholder="Enter username">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Password">
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+                <button type="button" class="btn btn-secondary" onclick="registerUser()">Register</button>
+            </form>
+        </div>
+
+        <!-- Patient Dashboard -->
+        <div id="patient-section" class="mt-4 d-none">
+            <h3>Patient Dashboard</h3>
+            <form id="patientForm">
+                <div class="form-group">
+                    <label for="patientName">Patient Name</label>
+                    <input type="text" class="form-control" id="patientName" placeholder="Enter patient name">
+                </div>
+                <div class="form-group">
+                    <label for="patientAddress">Address</label>
+                    <input type="text" class="form-control" id="patientAddress" placeholder="Enter address">
+                </div>
+                <div class="form-group">
+                    <label for="medicalRecords">Medical Records</label>
+                    <textarea class="form-control" id="medicalRecords" placeholder="Enter medical records"></textarea>
+                </div>
+                <button type="submit" class="btn btn-success">Add Patient</button>
+            </form>
+
+            <h4 class="mt-4">Patients</h4>
+            <ul id="patientList" class="list-group">
+                <!-- Patients will be listed here -->
+            </ul>
+        </div>
+
+        <!-- Caregiver Dashboard -->
+        <div id="caregiver-section" class="mt-4 d-none">
+            <h3>Caregiver Assignment</h3>
+            <form id="caregiverForm">
+                <div class="form-group">
+                    <label for="caregiverName">Caregiver Name</label>
+                    <input type="text" class="form-control" id="caregiverName" placeholder="Enter caregiver name">
+                </div>
+                <div class="form-group">
+                    <label for="caregiverPhone">Phone Number</label>
+                    <input type="text" class="form-control" id="caregiverPhone" placeholder="Enter phone number">
+                </div>
+                <button type="submit" class="btn btn-info">Assign Caregiver</button>
+            </form>
+
+            <h4 class="mt-4">Assigned Caregivers</h4>
+            <ul id="caregiverList" class="list-group">
+                <!-- Caregivers will be listed here -->
+            </ul>
+        </div>
+
+        <!-- Appointment Scheduling -->
+        <div id="appointment-section" class="mt-4 d-none">
+            <h3>Appointment Scheduling</h3>
+            <form id="appointmentForm">
+                <div class="form-group">
+                    <label for="appointmentPatient">Patient</label>
+                    <input type="text" class="form-control" id="appointmentPatient" placeholder="Enter patient name">
+                </div>
+                <div class="form-group">
+                    <label for="appointmentCaregiver">Caregiver</label>
+                    <input type="text" class="form-control" id="appointmentCaregiver" placeholder="Enter caregiver name">
+                </div>
+                <div class="form-group">
+                    <label for="appointmentDate">Date</label>
+                    <input type="date" class="form-control" id="appointmentDate">
+                </div>
+                <button type="submit" class="btn btn-warning">Schedule Appointment</button>
+            </form>
+
+            <h4 class="mt-4">Appointments</h4>
+            <ul id="appointmentList" class="list-group">
+                <!-- Appointments will be listed here -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
