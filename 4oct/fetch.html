@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let url="https://fakestoreapi.com/products"
+        let data=fetch(url)
+        data.then((e)=>{return e.json()})
+        .then((x)=>{
+            for(let i of x){
+            let div=document.createElement("div")
+            div.innerHTML=i.title
+            document.body.appendChild(div)
+            console.log(i.title)
+        }})
+    </script>
+</body>
+</html>
