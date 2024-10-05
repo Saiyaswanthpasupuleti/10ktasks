@@ -1,0 +1,113 @@
+api : application program interface 
+- basically api is used to establish the connection between user and server 
+- mainly we use rest api (representiional state of resource) rest api give output in the format of 
+- json and xml format (Extensiable markup langugae)
+- we use fetch() get get the data which is in the format of https
+- rest api gives the promises 
+- in rest api we use CRUD operations 
+- create (post)
+- read (get)
+- update (put)
+- delete (delete)
+
+these are the crud operation that we use in rest api
+the above methods are http methods to retrive the data from server or change / delete the data from server 
+
+ex :
+we have a link : 
+we use fetch() to get the data
+fetch("https://fakestoreapi.com/products");
+we know that resapi gives the promise 
+if it is true it will goes to .then() block or .catch() block 
+basically our data is promise so we chage our data to JSON() and we get our data 
+
+crud operations in restapi 
+
+to get the data :
+we use : 
+
+
+let data=fetch(""https://fakestoreapi.com/products",{
+    method:"GET",
+    headers:{
+        // "content-type":"application.json"
+                "getdata":"something"
+    }
+     })
+        data.then((e)=>{return e.json()})
+        .then((x)=>{
+            for(let i of x){
+            let div=document.createElement("div")
+            div.innerHTML=i.title
+            document.body.appendChild(div)
+            console.log(i.title)
+        }})
+
+
+
+
+to cretae the data:
+
+
+  let data=fetch("https://fakestoreapi.com/products",{
+            method:"POST",
+            headers:{
+                // "content-type":"application.json"
+                "getdata":"something"
+            },
+            body:JSON.stringify({ name:"yaswanth",age:"21"})
+        })
+        data.then((e)=>{return e.json()})
+        .then((x)=>{
+            // for(let i of x){
+            // let div=document.createElement("div")
+            // div.innerHTML=i.title
+            // document.body.appendChild(div)
+            // console.log(i.title)
+            console.log(x)}})
+
+
+
+
+to update the data : 
+
+
+ let data = fetch("https://fakestoreapi.com/products/1", { 
+            method: "PUT",
+            headers: {
+                "Content-Type": "application/json" 
+            },
+            body: JSON.stringify({
+                name: 'Jane Doe',
+                age: 32
+            })
+        });
+
+        data.then((response) => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok ' + response.statusText);
+            }
+            return response.json();
+        })
+        .then((json) => {
+            console.log(json);
+        })
+        .catch((error) => {
+            console.error('There was a problem with the fetch operation:', error);
+        });
+        
+
+
+
+to delete the data:
+
+
+fetch('https://api.example.com/data/1', {
+  method: 'DELETE',
+  headers: {
+    'Content-Type': 'application/json'
+  }
+})
+.then(response => response.json())
+.then(data => console.log('Deleted:', data))
+.catch(error => console.error('Error:', error));

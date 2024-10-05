@@ -7,16 +7,29 @@
 </head>
 <body>
     <script>
-        let url="https://fakestoreapi.com/products"
-        let data=fetch(url)
-        data.then((e)=>{return e.json()})
-        .then((x)=>{
-            for(let i of x){
-            let div=document.createElement("div")
-            div.innerHTML=i.title
-            document.body.appendChild(div)
-            console.log(i.title)
-        }})
+        let data = fetch("https://fakestoreapi.com/products/1", { 
+            method: "PUT",
+            headers: {
+                "Content-Type": "application/json" 
+            },
+            body: JSON.stringify({
+                name: 'Jane Doe',
+                age: 32
+            })
+        });
+
+        data.then((response) => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok ' + response.statusText);
+            }
+            return response.json();
+        })
+        .then((json) => {
+            console.log(json);
+        })
+        .catch((error) => {
+            console.error('There was a problem with the fetch operation:', error);
+        });
     </script>
 </body>
 </html>
