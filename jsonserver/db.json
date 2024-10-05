@@ -1,0 +1,26 @@
+{
+  "posts": [
+    {
+      "name": "yaswanth",
+      "age": 21,
+      "id": "1"
+    },
+    {
+      "name": "charan",
+      "age": 24,
+      "id": "2",
+      "city": "Tenali",
+      "country": "India"
+    },
+    {
+      "id": "3",
+      "name": "hari",
+      "age": 24
+    }
+  ],
+
+  "language":{
+    "primary":"telugu",
+    "secondary":"english"
+  }
+}
