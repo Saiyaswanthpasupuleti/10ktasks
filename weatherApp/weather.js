@@ -34,7 +34,6 @@ async function check(city) {
       <strong>Max Temp:</strong> ${data.main.temp_max}°C<br>
       <strong>Min Temp:</strong> ${data.main.temp_min}°C<br>
       <strong>Weather:</strong> ${data.weather[0].description}<br>
-      <img class="weather-img" src="http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" alt="${data.weather[0].description}">
     `;
 
     
