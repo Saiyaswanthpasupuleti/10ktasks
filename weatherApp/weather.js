@@ -15,6 +15,7 @@ async function check(city) {
 
   try {
     let response = await fetch(url);
+    console.log(response)
     let data = await response.json();
 
     if (!response.ok) {

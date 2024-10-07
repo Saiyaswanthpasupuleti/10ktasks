@@ -2,10 +2,111 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    
+    <div>
+        <input id="input" type="text">
+        <p id="error"></p>
+        <p id="data"></p>
+        <button id="button">Submit</button>
+    </div>
+    <script>
+        let button=document.getElementById("button")
+        button.addEventListener("click",()=>{
+            let input=document.getElementById("input").value
+            if(input){
+                check(input)
+            }
+            else{
+                window.alert("Input should not be empty")
+            }
+        })
+
+       async function check(city){
+            let apikey="afcda33dfd2b5219ef2a6fe67b396d08"
+            
+            // let url=`https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apikey}&units=metric`
+
+            let url=`https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apikey}&units=metric`
+
+
+            try{
+                let response= await fetch(url)
+                console.log(response)
+                
+                let data= await response.json()
+                console.log(data)
+                let result=document.getElementById("data")
+                result.innerHTML=`
+                <h2>Name : ${data.city.name}</h2>
+                <br>
+                Date : ${data.list[0].dt_txt
+}
+                <br>
+                temp : ${data.list[0].main.temp}
+                <br>
+                Clouds : ${data.list[0].weather[0].description}
+
+                <p>-------------</p>
+                
+                 Date : ${data.list[3].dt_txt
+}
+                <br>
+                temp : ${data.list[3].main.temp}
+                <br>
+                Clouds : ${data.list[3].weather[0].description}
+
+               <p>-------------</p>
+                
+                 Date : ${data.list[11].dt_txt
+}
+                <br>
+                temp : ${data.list[11].main.temp}
+                <br>
+                Clouds : ${data.list[11].weather[0].description}
+
+                 <p>-------------</p>
+                
+                 Date : ${data.list[19].dt_txt
+}
+                <br>
+                temp : ${data.list[19].main.temp}
+                <br>
+                Clouds : ${data.list[19].weather[0].description}
+
+                 <p>-------------</p>
+                
+                 Date : ${data.list[27].dt_txt
+}
+                <br>
+                temp : ${data.list[27].main.temp}
+                <br>
+                Clouds : ${data.list[27].weather[0].description}
+                
+                 <p>-------------</p>
+                
+                 Date : ${data.list[35].dt_txt
+}
+                <br>
+                temp : ${data.list[35].main.temp}
+                <br>
+                Clouds : ${data.list[35].weather[0].description}
+                `
+
+                if(!response.ok){
+                    throw new Error("no city found")
+                }
+
+            }
+            catch(error){
+             
+                let text=document.getElementById("error")
+                text.innerHTML=error.message
+                text.style.color="red"
+            }
+        }
+    </script>
 </body>
 </html>
