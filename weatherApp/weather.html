@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App Forecast</title>
+    <link
+      rel="stylesheet"
+      href="../bootstrap-5.3.3-dist/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: background-image 0.5s ease-in-out;
+        background-image: url("fields-1589613\ \(1\).jpg");
+      }
+
+      .main1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        backdrop-filter: blur(5px);
+      }
+
+      #main1child1 {
+        border: 2px solid black;
+        height: auto;
+        border-radius: 20px;
+        width: 100%;
+        max-width: 500px; /* Constrain max width for large screens */
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+      }
+
+      h1 {
+        color: #333;
+        font-size: 1.8rem;
+      }
+
+      #main1child2 {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
+      }
+
+      #errormsg {
+        color: red;
+        font-size: 1.2em;
+      }
+
+      #result {
+        margin-top: 20px;
+        font-size: 1.2em;
+      }
+
+      .weather-img {
+        width: 100px;
+        margin-top: 10px;
+      }
+
+      button {
+        margin-top: 20px;
+      }
+
+      /* Additional responsive styling */
+      @media (max-width: 768px) {
+        #main1child1 {
+          padding: 15px;
+          width: 90%;
+        }
+
+        h1 {
+          font-size: 1.5rem;
+        }
+
+        #result {
+          font-size: 1em;
+        }
+      }
+
+      @media (max-width: 576px) {
+        h1 {
+          font-size: 1.3rem;
+        }
+
+        #result {
+          font-size: 0.9em;
+        }
+
+        button {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body id="img">
+    <div class="main1">
+      <div id="main1child1">
+        <h1>Weather App Forecast</h1>
+        <div id="main1child2">
+          <input type="text" id="input" placeholder="Enter city name" class="form-control"/>
+        </div>
+        <p id="errormsg"></p>
+        <p id="result"></p>
+        <button id="button" class="btn btn-primary w-100">Submit</button>
+      </div>
+    </div>
+    <script src="./weather.js"></script>
+  </body>
+</html>

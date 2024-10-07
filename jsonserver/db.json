@@ -22,5 +22,9 @@
   "language":{
     "primary":"telugu",
     "secondary":"english"
+  },
+  "userDetails":{
+    "name":"yaswanth sai",
+    "age":22
   }
 }
