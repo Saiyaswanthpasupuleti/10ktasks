@@ -4,14 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap-5.3.3-dist/css/bootstrap.rtl.min.css">
+    <style>
+        #main{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          
+            
+
+        }
+        body{
+            /* background-image: url(./fields-1589613\ \(1\).jpg);
+            background-size:contain;
+            background-repeat: no-repeat;
+            opacity: 0.9; */
+        }
+        
+    </style>
 </head>
 <body>
-    <div>
-        <input id="input" type="text">
+    <div id="">
+    <div id="main">
+        <input id="input" type="text" class="form-control w-25">
         <p id="error"></p>
-        <p id="data"></p>
-        <button id="button">Submit</button>
+        <p id="data" style="color:black;"></p>
+        <button id="button" class="btn btn-primary">Submit</button>
+
+        <br>
     </div>
+    </div>
+
     <script>
         let button=document.getElementById("button")
         button.addEventListener("click",()=>{
