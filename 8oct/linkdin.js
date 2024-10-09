@@ -1,4 +1,4 @@
-// 1) let rows=5;
+// let rows=5;
 // let char=65
 // for(let i=1;i<=rows;i++){
 //     res=""
@@ -16,7 +16,7 @@
 
 
 
-// 2) let rows=5;
+//  let rows=5;
 // let char=65
 // for(let i=1;i<=rows;i++){
 //     res=""
