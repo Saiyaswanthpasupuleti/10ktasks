@@ -1,0 +1,666 @@
+<div class="card" style="width: 18rem;">
+            <img src="https://example.com/hyundai-i20.jpg" class="card-img-top" alt="Hyundai i20">
+            <div class="card-body">
+                <h5 class="card-title">Hyundai i20</h5>
+                <p class="card-text">Premium Hatchback | Petrol | Manual, Automatic</p>
+                <a href="#" class="btn btn-primary">Buy</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="https://example.com/mahindra-thar.jpg" class="card-img-top" alt="Mahindra Thar">
+            <div class="card-body">
+                <h5 class="card-title">Mahindra Thar</h5>
+                <p class="card-text">4X4 SUV | Petrol, Diesel | Manual, Automatic</p>
+                <a href="#" class="btn btn-primary">Buy</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="https://example.com/tata-nexon.jpg" class="card-img-top" alt="Tata Nexon">
+            <div class="card-body">
+                <h5 class="card-title">Tata Nexon</h5>
+                <p class="card-text">Compact SUV | Petrol, Diesel, CNG | Manual, Automatic</p>
+                <a href="#" class="btn btn-primary">Buy</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="https://example.com/ford-eco-sport.jpg" class="card-img-top" alt="Ford EcoSport">
+            <div class="card-body">
+                <h5 class="card-title">Ford EcoSport</h5>
+                <p class="card-text">Compact SUV | Petrol, Diesel | Manual, Automatic</p>
+                <a href="#" class="btn btn-primary">Buy</a>
+            </div>
+        </div>
+        
+        <div class="card" style="width: 18rem;">
+            <img src="https://example.com/volkswagen-polo.jpg" class="card-img-top" alt="Volkswagen Polo">
+            <div class="card-body">
+                <h5 class="card-title">Volkswagen Polo</h5>
+                <p class="card-text">Hatchback | Petrol, Diesel | Manual, Automatic</p>
+                <a href="#" class="btn btn-primary">Buy</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="https://example.com/suzuki-swift.jpg" class="card-img-top" alt="Maruti Suzuki Swift">
+          <div class="card-body">
+              <h5 class="card-title">Maruti Suzuki Swift</h5>
+              <p class="card-text">Mid-Size Hatchback | Petrol, CNG | Manual, Automatic</p>
+              <a href="#" class="btn btn-primary">Buy</a>
+          </div>
+      </div>
+      
+      <div class="card" style="width: 18rem;">
+          <img src="https://example.com/suzuki-brezza.jpg" class="card-img-top" alt="Maruti Suzuki Brezza">
+          <div class="card-body">
+              <h5 class="card-title">Maruti Suzuki Brezza</h5>
+              <p class="card-text">Compact SUV | Petrol | Manual, Automatic</p>
+              <a href="#" class="btn btn-primary">Buy</a>
+          </div>
+      </div>
+      
+      <div class="card" style="width: 18rem;">
+          <img src="https://example.com/suzuki-alto.jpg" class="card-img-top" alt="Maruti Suzuki Alto">
+          <div class="card-body">
+              <h5 class="card-title">Maruti Suzuki Alto</h5>
+              <p class="card-text">Hatchback | Petrol, CNG | Manual</p>
+              <a href="#" class="btn btn-primary">Buy</a>
+          </div>
+      </div>
+      
+      <div class="card" style="width: 18rem;">
+          <img src="https://example.com/suzuki-ciaz.jpg" class="card-img-top" alt="Maruti Suzuki Ciaz">
+          <div class="card-body">
+              <h5 class="card-title">Maruti Suzuki Ciaz</h5>
+              <p class="card-text">Sedan | Petrol, Diesel | Manual, Automatic</p>
+              <a href="#" class="btn btn-primary">Buy</a>
+          </div>
+      </div>
+      
+      <div class="card" style="width: 18rem;">
+          <img src="https://example.com/suzuki-jimny.jpg" class="card-img-top" alt="Maruti Suzuki Jimny">
+          <div class="card-body">
+              <h5 class="card-title">Maruti Suzuki Jimny</h5>
+              <p class="card-text">Compact SUV | Petrol | Manual, Automatic</p>
+              <a href="#" class="btn btn-primary">Buy</a>
+          </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="https://example.com/hyundai-creta.jpg" class="card-img-top" alt="Hyundai Creta">
+        <div class="card-body">
+            <h5 class="card-title">Hyundai Creta</h5>
+            <p class="card-text">Compact SUV | Petrol, Diesel | Manual, Automatic</p>
+            <a href="#" class="btn btn-primary">Buy</a>
+        </div>
+    </div>
+    
+    <div class="card" style="width: 18rem;">
+        <img src="https://example.com/hyundai-i20.jpg" class="card-img-top" alt="Hyundai i20">
+        <div class="card-body">
+            <h5 class="card-title">Hyundai i20</h5>
+            <p class="card-text">Premium Hatchback | Petrol, Diesel | Manual, Automatic</p>
+            <a href="#" class="btn btn-primary">Buy</a>
+        </div>
+    </div>
+    
+    <div class="card" style="width: 18rem;">
+        <img src="https://example.com/hyundai-venue.jpg" class="card-img-top" alt="Hyundai Venue">
+        <div class="card-body">
+            <h5 class="card-title">Hyundai Venue</h5>
+            <p class="card-text">Compact SUV | Petrol, Diesel | Manual, Automatic</p>
+            <a href="#" class="btn btn-primary">Buy</a>
+        </div>
+    </div>
+    
+    <div class="card" style="width: 18rem;">
+        <img src="https://example.com/hyundai-verna.jpg" class="card-img-top" alt="Hyundai Verna">
+        <div class="card-body">
+            <h5 class="card-title">Hyundai Verna</h5>
+            <p class="card-text">Sedan | Petrol, Diesel | Manual, Automatic</p>
+            <a href="#" class="btn btn-primary">Buy</a>
+        </div>
+    </div>
+    
+    <div class="card" style="width: 18rem;">
+        <img src="https://example.com/hyundai-tucson.jpg" class="card-img-top" alt="Hyundai Tucson">
+        <div class="card-body">
+            <h5 class="card-title">Hyundai Tucson</h5>
+            <p class="card-text">Mid-Size SUV | Petrol, Diesel | Manual, Automatic</p>
+            <a href="#" class="btn btn-primary">Buy</a>
+        </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="https://example.com/suzuki-ertiga.jpg" class="card-img-top" alt="Maruti Suzuki Ertiga">
+      <div class="card-body">
+          <h5 class="card-title">Maruti Suzuki Ertiga</h5>
+          <p class="card-text">MPV | Petrol, Diesel | Manual, Automatic</p>
+          <a href="#" class="btn btn-primary">Buy</a>
+      </div>
+  </div>
+  
+  <div class="card" style="width: 18rem;">
+      <img src="https://example.com/suzuki-s-cross.jpg" class="card-img-top" alt="Maruti Suzuki S-Cross">
+      <div class="card-body">
+          <h5 class="card-title">Maruti Suzuki S-Cross</h5>
+          <p class="card-text">Compact SUV | Petrol, Diesel | Manual, Automatic</p>
+          <a href="#" class="btn btn-primary">Buy</a>
+      </div>
+  </div>
+  
+  <div class="card" style="width: 18rem;">
+      <img src="https://example.com/suzuki-celerio.jpg" class="card-img-top" alt="Maruti Suzuki Celerio">
+      <div class="card-body">
+          <h5 class="card-title">Maruti Suzuki Celerio</h5>
+          <p class="card-text">Hatchback | Petrol, CNG | Manual, Automatic</p>
+          <a href="#" class="btn btn-primary">Buy</a>
+      </div>
+  </div>
+  
+  <div class="card" style="width: 18rem;">
+      <img src="https://example.com/suzuki-baleno.jpg" class="card-img-top" alt="Maruti Suzuki Baleno">
+      <div class="card-body">
+          <h5 class="card-title">Maruti Suzuki Baleno</h5>
+          <p class="card-text">Premium Hatchback | Petrol, Diesel | Manual, Automatic</p>
+          <a href="#" class="btn btn-primary">Buy</a>
+      </div>
+  </div>
+  
+  <div class="card" style="width: 18rem;">
+      <img src="https://example.com/suzuki-wagonr.jpg" class="card-img-top" alt="Maruti Suzuki Wagon R">
+      <div class="card-body">
+          <h5 class="card-title">Maruti Suzuki Wagon R</h5>
+          <p class="card-text">Hatchback | Petrol, CNG | Manual, Automatic</p>
+          <a href="#" class="btn btn-primary">Buy</a>
+      </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <img src="https://example.com/hyundai-santa-fe.jpg" class="card-img-top" alt="Hyundai Santa Fe">
+    <div class="card-body">
+        <h5 class="card-title">Hyundai Santa Fe</h5>
+        <p class="card-text">Mid-Size SUV | Petrol, Diesel | Automatic</p>
+        <a href="#" class="btn btn-primary">Buy</a>
+    </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+    <img src="https://example.com/hyundai-ioniq.jpg" class="card-img-top" alt="Hyundai Ioniq">
+    <div class="card-body">
+        <h5 class="card-title">Hyundai Ioniq</h5>
+        <p class="card-text">Hybrid | Petrol, Electric | Automatic</p>
+        <a href="#" class="btn btn-primary">Buy</a>
+    </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+    <img src="https://example.com/hyundai-kona.jpg" class="card-img-top" alt="Hyundai Kona">
+    <div class="card-body">
+        <h5 class="card-title">Hyundai Kona</h5>
+        <p class="card-text">Compact SUV | Petrol, Electric | Automatic</p>
+        <a href="#" class="btn btn-primary">Buy</a>
+    </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+    <img src="https://example.com/hyundai-ax1.jpg" class="card-img-top" alt="Hyundai AX1">
+    <div class="card-body">
+        <h5 class="card-title">Hyundai AX1</h5>
+        <p class="card-text">Micro SUV | Petrol | Manual, Automatic</p>
+        <a href="#" class="btn btn-primary">Buy</a>
+    </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+    <img src="https://example.com/hyundai-solaris.jpg" class="card-img-top" alt="Hyundai Solaris">
+    <div class="card-body">
+        <h5 class="card-title">Hyundai Solaris</h5>
+        <p class="card-text">Compact Sedan | Petrol, Diesel | Manual, Automatic</p>
+        <a href="#" class="btn btn-primary">Buy</a>
+    </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="https://example.com/tata-curvv.jpg" class="card-img-top" alt="Tata Curvv">
+  <div class="card-body">
+      <h5 class="card-title">Tata Curvv</h5>
+      <p class="card-text">SUV Coupe | Petrol, Diesel | Manual, Automatic</p>
+      <a href="#" class="btn btn-primary">Buy</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="https://example.com/tata-curvv-ev.jpg" class="card-img-top" alt="Tata Curvv EV">
+  <div class="card-body">
+      <h5 class="card-title">Tata Curvv EV</h5>
+      <p class="card-text">SUV Coupe | Electric | Automatic</p>
+      <a href="#" class="btn btn-primary">Buy</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="https://example.com/tata-altroz.jpg" class="card-img-top" alt="Tata Altroz">
+  <div class="card-body">
+      <h5 class="card-title">Tata Altroz</h5>
+      <p class="card-text">Premium Hatchback | Petrol, Diesel, CNG | Manual, Automatic</p>
+      <a href="#" class="btn btn-primary">Buy</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="https://example.com/tata-harrier.jpg" class="card-img-top" alt="Tata Harrier">
+  <div class="card-body">
+      <h5 class="card-title">Tata Harrier</h5>
+      <p class="card-text">Mid-Size SUV | Diesel | Manual, Automatic</p>
+      <a href="#" class="btn btn-primary">Buy</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="https://example.com/tata-nexon.jpg" class="card-img-top" alt="Tata Nexon">
+  <div class="card-body">
+      <h5 class="card-title">Tata Nexon</h5>
+      <p class="card-text">Compact SUV | Petrol, Diesel, CNG | Manual, Automatic</p>
+      <a href="#" class="btn btn-primary">Buy</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="https://example.com/tata-nexon-ev.jpg" class="card-img-top" alt="Tata Nexon EV">
+  <div class="card-body">
+      <h5 class="card-title">Tata Nexon EV</h5>
+      <p class="card-text">Compact SUV | Electric | Automatic</p>
+      <a href="#" class="btn btn-primary">Buy</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="https://example.com/tata-punch.jpg" class="card-img-top" alt="Tata Punch">
+  <div class="card-body">
+      <h5 class="card-title">Tata Punch</h5>
+      <p class="card-text">Micro SUV | Petrol, CNG | Manual, Automatic</p>
+      <a href="#" class="btn btn-primary">Buy</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="https://example.com/tata-punch-ev.jpg" class="card-img-top" alt="Tata Punch EV">
+  <div class="card-body">
+      <h5 class="card-title">Tata Punch EV</h5>
+      <p class="card-text">Micro SUV | Electric | Automatic</p>
+      <a href="#" class="btn btn-primary">Buy</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="https://example.com/tata-safari.jpg" class="card-img-top" alt="Tata Safari">
+  <div class="card-body">
+      <h5 class="card-title">Tata Safari</h5>
+      <p class="card-text">Full-Size 7 Seater SUV | Diesel | Manual, Automatic</p>
+      <a href="#" class="btn btn-primary">Buy</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="https://example.com/tata-tiago.jpg" class="card-img-top" alt="Tata Tiago">
+  <div class="card-body">
+      <h5 class="card-title">Tata Tiago</h5>
+      <p class="card-text">Mid-Size Hatchback | Petrol, CNG | Manual, Automatic</p>
+      <a href="#" class="btn btn-primary">Buy</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="https://example.com/tata-tiago-ev.jpg" class="card-img-top" alt="Tata Tiago EV">
+  <div class="card-body">
+      <h5 class="card-title">Tata Tiago EV</h5>
+      <p class="card-text">Mid-Size Hatchback | Electric | Automatic</p>
+      <a href="#" class="btn btn-primary">Buy</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="https://example.com/tata-tigor.jpg" class="card-img-top" alt="Tata Tigor">
+  <div class="card-body">
+      <h5 class="card-title">Tata Tigor</h5>
+      <p class="card-text">Compact Sedan | Petrol, CNG | Manual, Automatic</p>
+      <a href="#" class="btn btn-primary">Buy</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="https://example.com/tata-tigor-ev.jpg" class="card-img-top" alt="Tata Tigor EV">
+  <div class="card-body">
+      <h5 class="card-title">Tata Tigor EV</h5>
+      <p class="card-text">Compact Sedan | Electric | Automatic</p>
+      <a href="#" class="btn btn-primary">Buy</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="https://example.com/toyota-camry.jpg" class="card-img-top" alt="Toyota Camry">
+  <div class="card-body">
+      <h5 class="card-title">Toyota Camry</h5>
+      <p class="card-text">Premium Sedan | Hybrid | Automatic</p>
+      <a href="#" class="btn btn-primary">Buy</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="https://example.com/toyota-fortuner.jpg" class="card-img-top" alt="Toyota Fortuner">
+  <div class="card-body">
+      <h5 class="card-title">Toyota Fortuner</h5>
+      <p class="card-text">Full-Size SUV | Petrol, Diesel | Manual, Automatic</p>
+      <a href="#" class="btn btn-primary">Buy</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="https://example.com/toyota-glanza.jpg" class="card-img-top" alt="Toyota Glanza">
+  <div class="card-body">
+      <h5 class="card-title">Toyota Glanza</h5>
+      <p class="card-text">Premium Hatchback | Petrol, CNG | Manual, Automatic</p>
+      <a href="#" class="btn btn-primary">Buy</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="https://example.com/toyota-hilux.jpg" class="card-img-top" alt="Toyota Hilux">
+  <div class="card-body">
+      <h5 class="card-title">Toyota Hilux</h5>
+      <p class="card-text">Pickup Truck | Diesel | Manual, Automatic</p>
+      <a href="#" class="btn btn-primary">Buy</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="https://example.com/toyota-innova-crysta.jpg" class="card-img-top" alt="Toyota Innova Crysta">
+  <div class="card-body">
+      <h5 class="card-title">Toyota Innova Crysta</h5>
+      <p class="card-text">Premium MPV | Petrol, Diesel | Manual</p>
+      <a href="#" class="btn btn-primary">Buy</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="https://example.com/toyota-raize.jpg" class="card-img-top" alt="Toyota Raize">
+  <div class="card-body">
+      <h5 class="card-title">Toyota Raize</h5>
+      <p class="card-text">Compact SUV | Petrol | CVT</p>
+      <a href="#" class="btn btn-primary">Buy</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="https://example.com/toyota-yaris.jpg" class="card-img-top" alt="Toyota Yaris">
+  <div class="card-body">
+      <h5 class="card-title">Toyota Yaris</h5>
+      <p class="card-text">Premium Sedan | Petrol | CVT</p>
+      <a href="#" class="btn btn-primary">Buy</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="https://example.com/audi-a3.jpg" class="card-img-top" alt="Audi A3">
+  <div class="card-body">
+      <h5 class="card-title">Audi A3</h5>
+      <p class="card-text">Compact Sedan | Petrol, Diesel | Automatic</p>
+      <a href="#" class="btn btn-primary">Buy</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="https://example.com/audi-a4.jpg" class="card-img-top" alt="Audi A4">
+  <div class="card-body">
+      <h5 class="card-title">Audi A4</h5>
+      <p class="card-text">Premium Sedan | Petrol, Diesel | Automatic</p>
+      <a href="#" class="btn btn-primary">Buy</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="https://example.com/audi-a6.jpg" class="card-img-top" alt="Audi A6">
+  <div class="card-body">
+      <h5 class="card-title">Audi A6</h5>
+      <p class="card-text">Luxury Sedan | Petrol, Diesel | Automatic</p>
+      <a href="#" class="btn btn-primary">Buy</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="https://example.com/audi-a8.jpg" class="card-img-top" alt="Audi A8">
+  <div class="card-body">
+      <h5 class="card-title">Audi A8</h5>
+      <p class="card-text">Luxury Sedan | Petrol, Diesel | Automatic</p>
+      <a href="#" class="btn btn-primary">Buy</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="https://example.com/audi-q3.jpg" class="card-img-top" alt="Audi Q3">
+  <div class="card-body">
+      <h5 class="card-title">Audi Q3</h5>
+      <p class="card-text">Compact SUV | Petrol, Diesel | Automatic</p>
+      <a href="#" class="btn btn-primary">Buy</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="https://example.com/audi-q5.jpg" class="card-img-top" alt="Audi Q5">
+  <div class="card-body">
+      <h5 class="card-title">Audi Q5</h5>
+      <p class="card-text">Mid-Size SUV | Petrol, Diesel | Automatic</p>
+      <a href="#" class="btn btn-primary">Buy</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="https://example.com/audi-q7.jpg" class="card-img-top" alt="Audi Q7">
+  <div class="card-body">
+      <h5 class="card-title">Audi Q7</h5>
+      <p class="card-text">Full-Size SUV | Petrol, Diesel | Automatic</p>
+      <a href="#" class="btn btn-primary">Buy</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="https://example.com/audi-q8.jpg" class="card-img-top" alt="Audi Q8">
+  <div class="card-body">
+      <h5 class="card-title">Audi Q8</h5>
+      <p class="card-text">Luxury SUV | Petrol, Diesel | Automatic</p>
+      <a href="#" class="btn btn-primary">Buy</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="https://example.com/bmw-2-series.jpg" class="card-img-top" alt="BMW 2 Series">
+  <div class="card-body">
+      <h5 class="card-title">BMW 2 Series</h5>
+      <p class="card-text">Compact Coupe | Petrol, Diesel | Automatic</p>
+      <a href="#" class="btn btn-primary">Buy</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="https://example.com/bmw-3-series.jpg" class="card-img-top" alt="BMW 3 Series">
+  <div class="card-body">
+      <h5 class="card-title">BMW 3 Series</h5>
+      <p class="card-text">Compact Sedan | Petrol, Diesel | Automatic</p>
+      <a href="#" class="btn btn-primary">Buy</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="https://example.com/bmw-4-series.jpg" class="card-img-top" alt="BMW 4 Series">
+  <div class="card-body">
+      <h5 class="card-title">BMW 4 Series</h5>
+      <p class="card-text">Premium Coupe | Petrol, Diesel | Automatic</p>
+      <a href="#" class="btn btn-primary">Buy</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="https://example.com/bmw-5-series.jpg" class="card-img-top" alt="BMW 5 Series">
+  <div class="card-body">
+      <h5 class="card-title">BMW 5 Series</h5>
+      <p class="card-text">Luxury Sedan | Petrol, Diesel | Automatic</p>
+      <a href="#" class="btn btn-primary">Buy</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="https://example.com/bmw-7-series.jpg" class="card-img-top" alt="BMW 7 Series">
+  <div class="card-body">
+      <h5 class="card-title">BMW 7 Series</h5>
+      <p class="card-text">Luxury Sedan | Petrol, Diesel | Automatic</p>
+      <a href="#" class="btn btn-primary">Buy</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="https://example.com/bmw-x1.jpg" class="card-img-top" alt="BMW X1">
+  <div class="card-body">
+      <h5 class="card-title">BMW X1</h5>
+      <p class="card-text">Compact SUV | Petrol, Diesel | Automatic</p>
+      <a href="#" class="btn btn-primary">Buy</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="https://example.com/bmw-x3.jpg" class="card-img-top" alt="BMW X3">
+  <div class="card-body">
+      <h5 class="card-title">BMW X3</h5>
+      <p class="card-text">Mid-Size SUV | Petrol, Diesel | Automatic</p>
+      <a href="#" class="btn btn-primary">Buy</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="https://example.com/bmw-x5.jpg" class="card-img-top" alt="BMW X5">
+  <div class="card-body">
+      <h5 class="card-title">BMW X5</h5>
+      <p class="card-text">Full-Size SUV | Petrol, Diesel | Automatic</p>
+      <a href="#" class="btn btn-primary">Buy</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="https://example.com/bmw-x7.jpg" class="card-img-top" alt="BMW X7">
+  <div class="card-body">
+      <h5 class="card-title">BMW X7</h5>
+      <p class="card-text">Luxury SUV | Petrol, Diesel | Automatic</p>
+      <a href="#" class="btn btn-primary">Buy</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="https://example.com/mercedes-a-class.jpg" class="card-img-top" alt="Mercedes A-Class">
+  <div class="card-body">
+      <h5 class="card-title">Mercedes A-Class</h5>
+      <p class="card-text">Compact Hatchback | Petrol, Diesel | Automatic</p>
+      <a href="#" class="btn btn-primary">Buy</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="https://example.com/mercedes-c-class.jpg" class="card-img-top" alt="Mercedes C-Class">
+  <div class="card-body">
+      <h5 class="card-title">Mercedes C-Class</h5>
+      <p class="card-text">Compact Sedan | Petrol, Diesel | Automatic</p>
+      <a href="#" class="btn btn-primary">Buy</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="https://example.com/mercedes-e-class.jpg" class="card-img-top" alt="Mercedes E-Class">
+  <div class="card-body">
+      <h5 class="card-title">Mercedes E-Class</h5>
+      <p class="card-text">Luxury Sedan | Petrol, Diesel | Automatic</p>
+      <a href="#" class="btn btn-primary">Buy</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="https://example.com/mercedes-s-class.jpg" class="card-img-top" alt="Mercedes S-Class">
+  <div class="card-body">
+      <h5 class="card-title">Mercedes S-Class</h5>
+      <p class="card-text">Luxury Sedan | Petrol, Diesel | Automatic</p>
+      <a href="#" class="btn btn-primary">Buy</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="https://example.com/mercedes-glc.jpg" class="card-img-top" alt="Mercedes GLC">
+  <div class="card-body">
+      <h5 class="card-title">Mercedes GLC</h5>
+      <p class="card-text">Mid-Size SUV | Petrol, Diesel | Automatic</p>
+      <a href="#" class="btn btn-primary">Buy</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="https://example.com/mercedes-gle.jpg" class="card-img-top" alt="Mercedes GLE">
+  <div class="card-body">
+      <h5 class="card-title">Mercedes GLE</h5>
+      <p class="card-text">Full-Size SUV | Petrol, Diesel | Automatic</p>
+      <a href="#" class="btn btn-primary">Buy</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="https://example.com/mercedes-gls.jpg" class="card-img-top" alt="Mercedes GLS">
+  <div class="card-body">
+      <h5 class="card-title">Mercedes GLS</h5>
+      <p class="card-text">Luxury SUV | Petrol, Diesel | Automatic</p>
+      <a href="#" class="btn btn-primary">Buy</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="https://example.com/mercedes-g-class.jpg" class="card-img-top" alt="Mercedes G-Class">
+  <div class="card-body">
+      <h5 class="card-title">Mercedes G-Class</h5>
+      <p class="card-text">Luxury SUV | Petrol | Automatic</p>
+      <a href="#" class="btn btn-primary">Buy</a>
+  </div>
+
+
+  => courosel bar => 
+
+
+
+<!--            
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+         
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./assest/wallpaperflare.com_wallpaper (1).jpg" alt="Luxury Car 1" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assest/luxury-car-speeds-by-modern-building-dusk-generative-ai.jpg" alt="Luxury Car 2" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assest/wallpaperflare.com_wallpaper (2).jpg" alt="Luxury Car 3" class="d-block w-100">
+                    </div>
+                </div>
+
+            
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div> -->
+
+
+
+
+
+        => footer 
+
+
+        <footer class="text-center p-4 bg-dark text-white">
+        <p>&copy; 2024 CarsInn. All rights reserved.</p>
+    </footer>

@@ -1,0 +1,59 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+let a=fetch("https://autoapi.com/")
+a.then(response => { return response.json()})
+.then(data => {console.log(data); })
+.catch(error => console.error('Error:', error));
+
+    </script>
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Functionality</title>
+</head>
+<body>
+  <input type="text" id="searchInput" placeholder="Search..." onkeyup="searchItems()" />
+  <ul id="itemList">
+    <li>Apple</li>
+    <li>Banana</li>
+    <li>Orange</li>
+    <li>Pineapple</li>
+    <li>Grapes</li>
+  </ul>
+
+  <script>
+    function searchItems() {
+      // Get the value from the search input
+      const query = document.getElementById("searchInput").value.toLowerCase();
+      
+      // Get the list items
+      const items = document.querySelectorAll("#itemList li");
+
+      // Loop through list items and hide those that don't match the query
+      items.forEach(item => {
+        const itemText = item.textContent.toLowerCase();
+        if (itemText.includes(query)) {
+          item.style.display = "";  // Show item
+        } else {
+          item.style.display = "none";  // Hide item
+        }
+      });
+    }
+  </script>
+</body>
+</html>
