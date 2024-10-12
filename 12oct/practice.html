@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,6 +11,56 @@
         api.then((x)=>{return x.json()})
             .then((x)=>{console.log(x)})
             .catch((x)=>{console.log(x)})
+    </script>
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Data</title>
+</head>
+<body>
+    <h1>Car Data</h1>
+    <button id="loadCarsBtn">Load Car Data</button>
+    <div id="carData"></div>
+
+    <script>
+        document.getElementById('loadCarsBtn').addEventListener('click', () => {
+            // Using a CORS proxy to avoid the CORS issue
+            const apiUrl = 'https://cors-anywhere.herokuapp.com/https://www.carqueryapi.com/api/0.3/?cmd=getMakes';
+
+            fetch(apiUrl)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    const carDiv = document.getElementById('carData');
+                    let carHTML = '';
+                    
+                    // Check if Makes exists in the response data
+                    if (data.Makes) {
+                        data.Makes.forEach(car => {
+                            carHTML += `<p><strong>Make:</strong> ${car.make_display} (${car.make_country})</p>`;
+                        });
+                    } else {
+                        carHTML = '<p>No car makes found.</p>';
+                    }
+
+                    carDiv.innerHTML = carHTML;
+                })
+                .catch(error => {
+                    console.error('Error fetching car data:', error);
+                    document.getElementById('carData').innerHTML = `<p>Error fetching car data: ${error.message}</p>`;
+                });
+        });
     </script>
 </body>
 </html>
