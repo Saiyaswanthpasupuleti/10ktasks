@@ -1,0 +1,95 @@
+
+            <div class="card" style="width: 18rem;">
+                <img src="./assest/S-Class-1160x653.webp" class="card-img-top" alt="...">
+                <div class="card-body"  style="display: flex; justify-content: space-between; flex-direction: column;">
+                  <h5 class="card-title">Ferrari</h5>
+                  <p class="card-text">Premium Hatchback | Petrol | Manual, Automatic </p>
+                  <p class="card-price">5000/-</p>
+                  <a href="./cart.html" class="btn btn-primary" onclick="addToCart('Ferrari', 'Premium Hatchback | Petrol | Manual, Automatic', './assest/S-Class-1160x653.webp',5000,fromdate,todate)">Book</a>
+                </div>
+          </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img src="./assest/S-Class-1160x653.webp" class="card-img-top" alt="...">
+            <div class="card-body"  style="display: flex; justify-content: space-between; flex-direction: column;">
+              <h5 class="card-title">Jeep</h5>
+              <p class="card-text">Premium Hatchback | Petrol | Manual, Automatic </p>
+              <p class="card-price">5000/-</p>
+              <a href="./cart.html" class="btn btn-primary" onclick="addToCart('Jeep', 'Premium Hatchback | Petrol | Manual, Automatic', './assest/S-Class-1160x653.webp',5000,fromdate,todate)">Book</a>
+            </div>
+        </div>
+            <div class="card" style="width: 18rem;">
+                <img src="./assest/S-Class-1160x653.webp" class="card-img-top" alt="...">
+                <div class="card-body"  style="display: flex; justify-content: space-between; flex-direction: column;">
+                  <h5 class="card-title">Kia</h5>
+                  <p class="card-text">Premium Hatchback | Petrol | Manual, Automatic </p>
+                  <p class="card-price">5000/-</p>
+                  <a href="./cart.html" class="btn btn-primary" onclick="addToCart('kia', 'Premium Hatchback | Petrol | Manual, Automatic', './assest/S-Class-1160x653.webp',5000,fromdate,todate)">Book</a>
+                </div>
+            </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="./assest/S-Class-1160x653.webp" class="card-img-top" alt="...">
+                    <div class="card-body"  style="display: flex; justify-content: space-between; flex-direction: column;">
+                      <h5 class="card-title">Skoda</h5>
+                      <p class="card-text">Premium Hatchback | Petrol | Manual, Automatic </p>
+                      <p class="card-price">5000/-</p>
+                      <a href="./cart.html" class="btn btn-primary" onclick="addToCart('Skoda', 'Premium Hatchback | Petrol | Manual, Automatic', './assest/S-Class-1160x653.webp',5000,fromdate,todate)">Book</a>
+                    </div>
+                </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./assest/S-Class-1160x653.webp" class="card-img-top" alt="...">
+                        <div class="card-body"  style="display: flex; justify-content: space-between; flex-direction: column;">
+                          <h5 class="card-title">Volkswaen</h5>
+                          <p class="card-text">Premium Hatchback | Petrol | Manual, Automatic </p>
+                          <p class="card-price">5000/-</p>
+                          <a href="./cart.html" class="btn btn-primary" onclick="addToCart('Volkswaen', 'Premium Hatchback | Petrol | Manual, Automatic', './assest/S-Class-1160x653.webp',5000,fromdate,todate)">Book</a>
+                        </div>
+                    </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="./assest/S-Class-1160x653.webp" class="card-img-top" alt="...">
+                            <div class="card-body"  style="display: flex; justify-content: space-between; flex-direction: column;">
+                              <h5 class="card-title">Nissan</h5>
+                              <p class="card-text">Premium Hatchback | Petrol | Manual, Automatic </p>
+                              <p class="card-price">5000/-</p>
+                              <a href="./cart.html" class="btn btn-primary" onclick="addToCart('Nissan', 'Premium Hatchback | Petrol | Manual, Automatic', './assest/S-Class-1160x653.webp',5000,fromdate,todate)">Book</a>
+                            </div>
+                        </div>
+                            <div class="card" style="width: 18rem;">
+                                <img src="./assest/S-Class-1160x653.webp" class="card-img-top" alt="...">
+                                <div class="card-body"  style="display: flex; justify-content: space-between; flex-direction: column;">
+                                  <h5 class="card-title">Bently</h5>
+                                  <p class="card-text">Premium Hatchback | Petrol | Manual, Automatic </p>
+                                  <p class="card-price">5000/-</p>
+                                  <a href="./cart.html" class="btn btn-primary" onclick="addToCart('Bently', 'Premium Hatchback | Petrol | Manual, Automatic', './assest/S-Class-1160x653.webp',5000,fromdate,todate)">Book</a>
+                                </div>
+                            </div>
+                                <div class="card" style="width: 18rem;">
+                                    <img src="./assest/S-Class-1160x653.webp" class="card-img-top" alt="...">
+                                    <div class="card-body"  style="display: flex; justify-content: space-between; flex-direction: column;">
+                                      <h5 class="card-title">Mahindra</h5>
+                                      <p class="card-text">Premium Hatchback | Petrol | Manual, Automatic </p>
+                                      <p class="card-price">5000/-</p>
+                                      <a href="./cart.html" class="btn btn-primary" onclick="addToCart('Mahindra', 'Premium Hatchback | Petrol | Manual, Automatic', './assest/S-Class-1160x653.webp',5000,fromdate,todate)">Book</a>
+                                    </div>
+                                </div>
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="./assest/S-Class-1160x653.webp" class="card-img-top" alt="...">
+                                        <div class="card-body"  style="display: flex; justify-content: space-between; flex-direction: column;">
+                                          <h5 class="card-title">MG</h5>
+                                          <p class="card-text">Premium Hatchback | Petrol | Manual, Automatic </p>
+                                          <p class="card-price">5000/-</p>
+                                          <a href="./cart.html" class="btn btn-primary" onclick="addToCart('MG', 'Premium Hatchback | Petrol | Manual, Automatic', './assest/S-Class-1160x653.webp',5000,fromdate,todate)">Book</a>
+                                        </div>
+                                    </div>
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="./assest/S-Class-1160x653.webp" class="card-img-top" alt="...">
+                                            <div class="card-body"  style="display: flex; justify-content: space-between; flex-direction: column;">
+                                              <h5 class="card-title">Renualt</h5>
+                                              <p class="card-text">Premium Hatchback | Petrol | Manual, Automatic </p>
+                                              <p class="card-price">5000/-</p>
+                                              <a href="./cart.html" class="btn btn-primary" onclick="addToCart('Renualt', 'Premium Hatchback | Petrol | Manual, Automatic', './assest/S-Class-1160x653.webp',5000,fromdate,todate)">Book</a>
+                                            </div>
+                                            </div>
+          
+        </div>

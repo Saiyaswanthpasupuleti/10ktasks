@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarsInn</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+        }
+        
+        #parent5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: auto;
+    background-color: black;
+    color: white;
+}
+
+#last {
+    /* background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    border-radius: 10px;
+
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 600px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+.input-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+ 
+        #parent1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            border: 2px solid white;
+            height: 100vh;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            background-image: url("./assest/jamie-street-JtP_Dqtz6D8-unsplash.jpg");
+            background-size: cover;
+        }
+
+        nav {
+            width: 100%;
+            border-bottom: 2px solid black;
+        }
+
+        #p1child2 {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            justify-content: center;
+            padding: 20px;
+            
+            
+            
+        }
+        #contact-form {
+            border: 2px solid white;
+            padding: 20px;
+            border-radius: 10px;
+  
+        }
+
+        #p1child2gc1 {
+            border: 2px solid black;
+           height: 10vh;
+           width: 90vw;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+            justify-content: flex-start;
+            
+            
+        }
+        #form{
+            display: flex;
+             flex-direction: row;
+
+              margin: 30px; 
+              gap: 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        #parent2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            border: 2px solid white;
+            height: 100vh;
+            width: 100%;
+            padding: 20px;
+            /* background-color:#b9f3f3 */
+            background-color: black;
+            color: white;
+        }
+
+        #parent5{
+          border: 2px solid white;
+          
+          
+          height: 100vh;
+          width: auto;
+        }
+        
+        #parent3{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid white;
+            height: auto;
+            width: auto;
+            /* background-color:#b9f3f3 */
+            background-color: black;
+            color: white;
+         
+        }
+        #none{
+        display: none;
+      }
+      
+      #parent4{
+        border: 2px solid white;
+        height: 100vh;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: black;
+      }
+       
+        @media screen and (min-width:320px) and (max-width:576px){
+            #none{
+        display: inline;
+        color: black;
+      }
+      #parent2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            border: 2px solid white;
+            height: auto;
+            width: 100%;
+            padding: 20px;
+            /* background-color:#b9f3f3 */
+            background-color: black;
+            color: white;
+        }
+
+        #last{
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+        }
+      #parent1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            border: 2px solid black;
+            height: 100vh;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            background-image: url("./assest/jamie-street-JtP_Dqtz6D8-unsplash.jpg");
+            background-size: cover;
+        }
+        #parent4{
+        border: 2px solid white;
+        width: auto;
+        height: auto;
+        background-color: black;
+      }
+      #contact-form {
+                width: 90vw; /* Take almost full width on mobile */
+            }
+            
+            #p1child2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex-grow: 1;
+            text-align: center;
+        }
+        #p1child2gc1 {
+            border: 2px solid black;
+            height: 60vh;
+            width: 70vw;
+            margin-top: 20px;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        #form{
+            display: flex;
+             flex-direction: column;
+              margin: 30px; 
+              gap: 20px;
+        }
+        }
+     
+        
+    </style>
+</head>
+<body>
+    <div id="parent1">
+        <nav class="navbar navbar-expand-sm navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="javascript:void(0)" style="font-size: 30px;">CarsInn</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mynavbar" style="color: white;">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0)">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#parent2">How to use CarsInn!</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#parent3">Book a Car</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#parent4">Happy Customers</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#parent5">Contact Us</a>
+                </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./cart.html">My Bookings</a>
+                        </li>                
+                        <li class="nav-item">
+                            <a class="nav-link" href="./login_page.html">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./signup_page.html">Sign Up</a>
+                        </li>
+                        
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2 w-100 bg-light" type="text" id="searchBar" placeholder="Search" onkeyup="search()" />
+                        <button class="btn btn-primary" id="searchfor" type="button">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        
+        
+        <div id="p1child2" >
+           <div id="none"><h2>Welcome to CarsInn</h2></div>
+            <div id="p1child2gc1" style="background-color: black; color: white;">
+                <form action="" id="form" >
+                    <label for="fromdate"><strong>From</strong></label>
+                    <input type="date" id="fromdate" style="text-align: center;" class="form-control">
+                    <label for="todate"><strong>To</strong></label>
+                    <input type="date" id="todate" style="text-align: center;" class="form-control">
+                <!-- </form>
+                <form action="" id="form"> -->
+                    <input type="submit" id="check" value="Check Availability" class="btn btn-primary">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="parent2">
+        <p style="font-size: 26px;  text-decoration: underline;"><strong>How to Rent a Car in with CarsInn?</strong></p>
+        <div style="display: flex; flex-direction: column; text-align: center;">
+            <h4 style="border:2px solid white;border-radius: 50px; width: auto; height: auto; border-radius: 10px; padding: 10px;">
+                <p>Login to CarsInn App</p>
+            </h4>
+            <span style="text-align: center;"><svg xmlns="http://www.w3.org/2000/svg" width="100" height="80" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1"/>
+              </svg></span>
+            <h4 style="border:2px solid white;border-radius: 50px; width: auto; height: auto; border-radius: 10px; padding: 10px;">
+                <p>Select date and Check Availability</p>
+            </h4>
+            <span style="text-align: center;"><svg xmlns="http://www.w3.org/2000/svg" width="100" height="80" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1"/>
+              </svg></span>
+            <h4 style="border:2px solid white;border-radius: 50px; width: auto; height: auto; border-radius: 10px; padding: 10px;">
+                <p>Pick a car of your choice at 0 security deposit</p>
+            </h4>
+            <span style="text-align: center;"><svg xmlns="http://www.w3.org/2000/svg" width="100" height="80" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1"/>
+              </svg></span>
+            <h4 style="border:2px solid white;border-radius: 50px; width: auto; height: auto; border-radius: 10px; padding: 10px;">
+                <p>The freedom of unlimited KMs
+                </p>
+            </h4>
+        </div>
+
+    </div>
+    
+    <div id="parent3">
+        <p style="font-size: 26px; text-align: center; padding: 20px;  text-decoration: underline;"><strong>Availabile Cars</strong></p>
+<div style="display: flex; gap: 20px; justify-content: space-evenly; flex-wrap: wrap;">
+        <div class="card" style="width: 18rem;">
+            <img src="./assest/2018-suzuki-swift-wallpaper-preview.jpg" class="card-img-top" alt="...">
+            <div class="card-body" style="display: flex; justify-content: center; flex-direction: column;background-color: black;color: white; ">
+              <h5 class="card-title">Swift</h5>
+              <p class="card-text">Premium Hatchback | Petrol | Manual, Automatic</p>
+              <p class="card-price">2000/-</p>
+              <a href="./cart.html" class="btn btn-light text-dark" onclick="addToCart('Swift', 'Premium Hatchback | Petrol | Manual, Automatic', './assest/2018-suzuki-swift-wallpaper-preview.jpg',2000,fromdate,todate)"><strong>Book</strong></a>
+
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;  display: flex; justify-content: space-between; align-items: center;">
+            <img src="./assest/creta-right-front-three-quarter.webp" class="card-img-top" alt="...">
+            <div class="card-body" style="display: flex; justify-content: space-between; flex-direction: column;background-color: black;color: white;">
+              <h5 class="card-title">Honda Creta</h5>
+              <p class="card-text">Premium Hatchback | Petrol | Manual, Automatic</p>
+              <p class="card-price">3000/-</p>
+              <a href="./cart.html" class="btn btn-light text-dark" onclick="addToCart('Honda Creta', 'Premium Hatchback | Petrol | Manual, Automatic', './assest/creta-right-front-three-quarter.webp',3000,fromdate,todate)">Book</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="./assest/S-Class-1160x653.webp" class="card-img-top" alt="...">
+            <div class="card-body"  style="display: flex; justify-content: space-between; flex-direction: column;background-color: black;color: white;">
+              <h5 class="card-title">Benz</h5>
+              <p class="card-text">Premium Hatchback | Petrol | Manual, Automatic </p>
+              <p class="card-price">5000/-</p>
+              <a href="./cart.html" class="btn btn-light text-dark" onclick="addToCart('Benz', 'Premium Hatchback | Petrol | Manual, Automatic', './assest/S-Class-1160x653.webp',5000,fromdate,todate)">Book</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="./assest/35019_AudiA3Cabriolet201735TFSI-015_468x263.jpeg" class="card-img-top" alt="...">
+            <div class="card-body"  style="display: flex; justify-content: space-between; flex-direction: column;background-color: black;color: white;">
+              <h5 class="card-title">Audi</h5>
+              <p class="card-text">Premium Hatchback | Petrol | Manual, Automatic</p>
+              <p class="card-price">6000/-</p>
+              <a href="./cart.html" class="btn btn-light text-dark" onclick="addToCart('Audi', 'Premium Hatchback | Petrol | Manual, Automatic', './assest/35019_AudiA3Cabriolet201735TFSI-015_468x263.jpeg',6000,fromdate,todate)">Book</a>
+            </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="./assest/Ferrari+F8+Tributo.jpeg" class="card-img-top" alt="...">
+                <div class="card-body"  style="display: flex; justify-content: space-between; flex-direction: column;background-color: black;color: white;">
+                  <h5 class="card-title">Ferrari</h5>
+                  <p class="card-text">Premium Hatchback | Petrol | Manual, Automatic </p>
+                  <p class="card-price">5000/-</p>
+                  <a href="./cart.html" class="btn btn-light text-dark" onclick="addToCart('Ferrari', 'Premium Hatchback | Petrol | Manual, Automatic', './assest/Ferrari+F8+Tributo.jpeg',6000,fromdate,todate)">Book</a>
+                </div>
+          </div>
+          
+
+
+
+
+          <div class="card" style="width: 18rem;">
+            <img src="./assest/jeep.jpeg" class="card-img-top" alt="...">
+            <div class="card-body"  style="display: flex; justify-content: space-between; flex-direction: column;background-color: black;color: white;">
+              <h5 class="card-title">Jeep</h5>
+              <p class="card-text">Premium Hatchback | Petrol | Manual, Automatic </p>
+              <p class="card-price">5000/-</p>
+              <a href="./cart.html" class="btn btn-light text-dark" onclick="addToCart('Jeep', 'Premium Hatchback | Petrol | Manual, Automatic', './assest/jeep.jpeg',5000,fromdate,todate)">Book</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="./assest/kia.webp" class="card-img-top" alt="...">
+            <div class="card-body"  style="display: flex; justify-content: space-between; flex-direction: column;background-color: black;color: white;">
+              <h5 class="card-title">Kia</h5>
+              <p class="card-text">Premium Hatchback | Petrol | Manual, Automatic </p>
+              <p class="card-price">5000/-</p>
+              <a href="./cart.html" class="btn btn-light text-dark" onclick="addToCart('kia', 'Premium Hatchback | Petrol | Manual, Automatic', './assest/kia.webp',5000,fromdate,todate)">Book</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="./assest/skoda-rapid-discontinued-production-ends-1200x900.jpg" class="card-img-top" alt="...">
+            <div class="card-body"  style="display: flex; justify-content: space-between; flex-direction: column;background-color: black;color: white;">
+              <h5 class="card-title">Skoda</h5>
+              <p class="card-text">Premium Hatchback | Petrol | Manual, Automatic </p>
+              <p class="card-price">5000/-</p>
+              <a href="./cart.html" class="btn btn-light text-dark" onclick="addToCart('Skoda', 'Premium Hatchback | Petrol | Manual, Automatic', './assest/skoda-rapid-discontinued-production-ends-1200x900.jpg',34000,fromdate,todate)">Book</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="./assest/volswagen.avif" class="card-img-top" alt="...">
+            <div class="card-body"  style="display: flex; justify-content: space-between; flex-direction: column;background-color: black;color: white;">
+              <h5 class="card-title">Volkswaen</h5>
+              <p class="card-text">Premium Hatchback | Petrol | Manual, Automatic </p>
+              <p class="card-price">5000/-</p>
+              <a href="./cart.html" class="btn btn-light text-dark" onclick="addToCart('Volkswaen', 'Premium Hatchback | Petrol | Manual, Automatic', './assest/volswagen.avif',4500,fromdate,todate)">Book</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="./assest/Nissan-Terrano-Front-view-93548.webp" class="card-img-top" alt="...">
+            <div class="card-body"  style="display: flex; justify-content: space-between; flex-direction: column;background-color: black;color: white;">
+              <h5 class="card-title">Nissan</h5>
+              <p class="card-text">Premium Hatchback | Petrol | Manual, Automatic </p>
+              <p class="card-price">5000/-</p>
+              <a href="./cart.html" class="btn btn-light text-dark" onclick="addToCart('Nissan', 'Premium Hatchback | Petrol | Manual, Automatic', './assest/Nissan-Terrano-Front-view-93548.webp',2300,fromdate,todate)">Book</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="./assest/Bently.webp" class="card-img-top" alt="...">
+            <div class="card-body"  style="display: flex; justify-content: space-between; flex-direction: column;background-color: black;color: white;">
+              <h5 class="card-title">Bently</h5>
+              <p class="card-text">Premium Hatchback | Petrol | Manual, Automatic </p>
+              <p class="card-price">5000/-</p>
+              <a href="./cart.html" class="btn btn-light text-dark" onclick="addToCart('Bently', 'Premium Hatchback | Petrol | Manual, Automatic', './assest/Bently.webp',8000,fromdate,todate)">Book</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="./assest/Mahindra-Scorpio-main-large.jpg" class="card-img-top" alt="...">
+            <div class="card-body"  style="display: flex; justify-content: space-between; flex-direction: column;background-color: black;color: white;">
+              <h5 class="card-title">Mahindra</h5>
+              <p class="card-text">Premium Hatchback | Petrol | Manual, Automatic </p>
+              <p class="card-price">5000/-</p>
+              <a href="./cart.html" class="btn btn-light text-dark" onclick="addToCart('Mahindra', 'Premium Hatchback | Petrol | Manual, Automatic', './assest/Mahindra-Scorpio-main-large.jpg',4000,fromdate,todate)">Book</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="./assest/mg.webp" class="card-img-top" alt="...">
+            <div class="card-body"  style="display: flex; justify-content: space-between; flex-direction: column;background-color: black;color: white;">
+              <h5 class="card-title">MG</h5>
+              <p class="card-text">Premium Hatchback | Petrol | Manual, Automatic </p>
+              <p class="card-price">5000/-</p>
+              <a href="./cart.html" class="btn btn-light text-dark" onclick="addToCart('MG', 'Premium Hatchback | Petrol | Manual, Automatic', './assest/mg.webp',3000,fromdate,todate)">Book</a>
+            </div>
+        </div>
+       
+        <div class="card" style="width: 18rem;">
+            <img src="./assest/renault .jpg" class="card-img-top" alt="...">
+            <div class="card-body"  style="display: flex; justify-content: space-between; flex-direction: column;background-color: black;color: white;">
+              <h5 class="card-title">Renualt</h5>
+              <p class="card-text">Premium Hatchback | Petrol | Manual, Automatic </p>
+              <p class="card-price">5000/-</p>
+              <a href="./cart.html" class="btn btn-light text-dark" onclick="addToCart('Renualt', 'Premium Hatchback | Petrol | Manual, Automatic', './assest/renault .jpg',2000,fromdate,todate)">Book</a>
+            </div>
+        </div>
+            
+
+        <div class="card" style="width: 18rem;">
+            <img src="./assest/ford.jpg" class="card-img-top" alt="...">
+            <div class="card-body"  style="display: flex; justify-content: space-evenly; flex-direction: column;background-color: black;color: white;">
+              <h5 class="card-title">Ford</h5>
+              <p class="card-text">Premium Hatchback | Petrol | Manual, Automatic </p>
+              <p class="card-price">5000/-</p>
+              <a href="./cart.html" class="btn btn-light text-dark" onclick="addToCart('Ford', 'Premium Hatchback | Petrol | Manual, Automatic', './assest/ford.jpg',2000,fromdate,todate)">Book</a>
+            </div>
+        </div>
+
+        <!-- add more -->
+
+    </div>    
+    </div>
+    </div>
+
+
+    <div id="parent4" style="text-align: center;">
+     
+       <h3 style="color: white; padding: 40px; text-decoration: underline;"><strong>Our Happy Customers!</strong></h3>
+       <div style="display: flex; align-items: center; justify-content: center;justify-items: center; gap: 20px; flex-direction: row; flex-wrap: wrap;">
+         
+        <div class="card" style="width: 18rem;">
+            <img src="./assest/men1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Arvind, Bengaluru</h5>
+              <p class="card-text">Flattered with availability of well maintained cars Booked a XUV with unlimited kms,</p>
+              <div class="card-footer">
+                <small class="text-body-secondary">Last updated 20 mins ago</small>
+              </div>
+            </div>
+          </div>
+
+
+           
+        <div class="card" style="width: 18rem;">
+            <img src="./assest/men2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Gaurav, Delhi</h5>
+              <p class="card-text">Booked a XUV with unlimited kms, very happy availability of well maintained cars with CarsInn's service</p>
+              <div class="card-footer">
+                <small class="text-body-secondary">Last updated 10 mins ago</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img src="./assest/men3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Himanshu, Hyderabad</h5>
+              <p class="card-text">Booked a car for a family trip which was very comfortable and in great condition</p>
+              <div class="card-footer">
+                <small class="text-body-secondary">Last updated 10 mins ago</small>
+              </div>
+            </div>
+          </div>
+            
+
+    </div>
+       </div>
+
+      <div id="parent5">
+        <div id="last">
+            <div class="text-center mb-4" style=" text-decoration: underline;">
+                <h1>Contact Us</h1>
+            </div>
+            <div id="contact-form" class="mx-auto">
+                <form>
+                    <div class="form-group">
+                        <label for="contact_name" >Name:</label>
+                        <input type="text" class="form-control" id="contact_name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact_email">Email:</label>
+                        <input type="email" class="form-control" id="contact_email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact_message">Message:</label>
+                        <textarea class="form-control" id="contact_message" rows="5" placeholder="Your message" required></textarea>
+                    </div>
+                    <button type="submit" id="contact_send" class="btn btn-primary">Send</button>
+                </form>
+          </div>
+          <div></div>
+      </div>
+
+    </div>
+    <footer class="text-center p-4 text-white" style="background-color: rgb(29, 28, 28);">
+        <p>&copy; 2024 CarsInn_P_Sai_Yaswanth. All rights reserved.</p>
+    </footer>
+    
+       
+
+    <script>
+
+        //Contact form script 
+        try{
+        
+        let contact_send=document.getElementById("contact_send")
+        contact_send.addEventListener("click",()=>{
+        let contact_name=document.getElementById("contact_name").value
+        let contact_email=document.getElementById("contact_email").value
+        let contact_message=document.getElementById("contact_message").value
+
+        if(contact_name==="" || contact_email==="" || contact_message===""){
+            alert("Please fill the required feilds")
+        }
+        else{
+            let contactusdata={
+                contact_email:contact_email,
+                contact_name:contact_name,
+                contact_message:contact_message
+            }
+            let x=JSON.parse(localStorage.getItem("data"))||[]
+            x.push(contactusdata)
+            
+            localStorage.setItem("data",JSON.stringify(x))
+            alert("We have recived your responce we will get back to you shortly")
+        }
+        })
+    }
+    catch(a){
+        console.log(x.message)
+    }
+
+        
+    //form and ro date script
+
+    try{
+
+        let check = document.getElementById("check");
+check.addEventListener("click", (e) => {
+    e.preventDefault();
+    let fromdate = document.getElementById("fromdate").value;
+    let todate = document.getElementById("todate").value;
+
+    if (fromdate === "") {
+        window.alert("Please Select from date");
+    } else if (todate === "") {
+        window.alert("Please Select to date");
+    } else {
+        window.location.href = "#parent3"; // Redirect to a section or parent element
+    }
+});
+    }
+    catch(b){
+        console.log(b)
+    }
+
+// Function to add a car to the cart with availability dates
+try{
+function addToCart(name, description, image, price) {
+    let fromdate = document.getElementById("fromdate").value;
+    let todate = document.getElementById("todate").value;
+
+    if(fromdate==="" || todate===""){
+        alert("Please Select the date")
+    }
+    else{
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    let car = {
+        name: name,
+        description: description,
+        image: image,
+        price: price,
+        fromdate: fromdate,
+        todate: todate
+    };
+    cart.push(car);
+    localStorage.setItem('cart', JSON.stringify(cart));
+    alert(`${name} has been added to your cart.`);
+    }
+}
+}
+catch(c){
+    console.log(c)
+}
+
+
+
+try{
+
+function search() {
+    let input = document.getElementById('searchBar').value.toLowerCase();
+    let cards = document.querySelectorAll('.card');
+
+    cards.forEach(card => {
+        let title = card.querySelector('.card-title').innerText.toLowerCase();
+        if (title.includes(input)) {
+            card.style.display = "block";
+        } else {
+            card.style.display = "none";
+        }
+    });
+}
+
+
+
+      let searchfor=document.getElementById("searchfor")
+      searchfor.addEventListener("click",()=>{
+        let searchBar=document.getElementById("searchBar").value
+        if(searchBar===""){
+            alert("please enter the car name before you search")
+        }
+        else{
+            window.location.href="#parent3"
+        }
+
+
+      })
+    }
+    catch(d){
+        console.log(d)
+    }
+
+    </script>
+</body>
+</html>

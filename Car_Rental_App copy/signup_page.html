@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+    <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.rtl.min.css">
+    <style>
+        body{
+            /* background-color:#baffff; */
+            background-color: black;
+            color: white;
+            height: 100vh;
+            
+        }
+        #main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #border {
+            border: 2px solid #333;
+            border-radius: 10px;
+            padding: 30px;
+            background-color: white;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        #center {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .form-control {
+            padding: 15px;
+            font-size: 16px;
+        }
+
+        .links {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .links a {
+            text-decoration: none;
+            font-size: 14px;
+            color: #007bff;
+        }
+
+        .btn-primary {
+            width: 100%;
+            padding: 12px;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="border">
+            <form id="center">
+                <h3 class="text-center mb-4" style="color: black;text-align: center;font-size: 30px;">Signup</h3>
+                <input type="text" id="name" placeholder="Enter your Name" class="form-control">
+                <input type="email" id="email" placeholder="Enter your email" class="form-control">
+                <input type="password" id="password" placeholder="Create your password" class="form-control">
+                <input type="password" id="repeat-password" placeholder="Repeat your password" class="form-control">
+                
+                <div class="links">
+                    <a href=""></a>
+                    <a href="./login_page.html" id="signup">Login!</a>
+                </div>
+                
+                <input type="submit" id="submit" class="btn btn-primary mt-3" value="Signup" style="background-color: black; color: white; border-radius: 20px;">
+            </form>
+        </div>
+    </div>
+
+    <script src="./bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+    <script>
+        document.getElementById("submit").addEventListener("click", function(event) {
+            event.preventDefault(); // Prevent form from submitting
+
+            // Get the form input values
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let password = document.getElementById("password").value;
+            let repeatPassword = document.getElementById("repeat-password").value;
+
+            // Simple password match check
+            if (password !== repeatPassword) {
+                alert("Passwords do not match!");
+                return;
+            }
+
+            // Prepare the user object
+            let user = {
+                name: name,
+                email: email,
+                password: password
+            };
+
+            // Store the user in localStorage
+            let users = JSON.parse(localStorage.getItem("users")) || [];
+            users.push(user);
+            localStorage.setItem("users", JSON.stringify(users));
+
+            alert("Signup successful!");
+
+            // Optionally, redirect to another page
+            // window.location.href = "login_page.html";
+        });
+    </script>
+</body>
+</html>

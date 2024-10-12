@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarsInn Cart</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: black;
+            color: white;
+        }
+
+        .cart-container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 2px solid white;
+            border-radius: 10px;
+        }
+
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .cart-item h5 {
+            margin: 0;
+        }
+
+        .cart-item img {
+            width: 150px;
+            height: auto;
+        }
+
+        .cart-empty {
+            text-align: center;
+            padding: 50px;
+            font-size: 24px;
+        }
+
+        @media (max-width: 768px) {
+            .cart-item {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .cart-item img {
+                width: 100px;
+                margin-top: 10px;
+            }
+
+            .btn-danger {
+                margin-top: 10px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .cart-container {
+                padding: 10px;
+            }
+
+            .cart-item img {
+                width: 80px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container cart-container">
+        <h2 class="text-center mb-4">My Bookings</h2>
+        <div id="cartItems"></div>
+        <div id="cartEmpty" class="cart-empty" onclick="booking()"></div>
+        <div class="text-center mt-4">
+            <span id="carts" style="display: block;">Click here to see the cart</span>
+            <button onclick="loadCart()" id="cartButton" class="btn btn-primary">Cart</button>
+            
+        </div>
+        <div style="text-align: center;display: flex; justify-content: center; align-items: center;">
+            <button class="btn btn-success" id="buyButton" style="display: none;">Buy</button>
+        </div>
+        <h2 class="text-center mt-5">My Bookings</h2>
+        <div id="bookingsContainer"></div>
+    </div>
+
+    <script>
+        // Function to load the cart
+        function loadCart() {
+            let cartButton = document.getElementById("cartButton");
+            let buyButton = document.getElementById("buyButton");
+            let cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+            const cartContainer = document.getElementById('cartItems');
+            const cartEmpty = document.getElementById('cartEmpty');
+            let carts=document.getElementById("carts")
+            carts.style.display = "none";
+            cartButton.style.display = "none";
+            buyButton.style.display = "block";
+
+            if (cartItems.length === 0) {
+                cartContainer.style.display = 'none';
+                cartEmpty.style.display = 'block';
+            } else {
+                cartEmpty.style.display = 'none';
+                cartContainer.style.display = 'block';
+                cartContainer.innerHTML = '';
+
+                let totalPrice = 0;
+                cartItems.forEach((item, index) => {
+                    totalPrice += item.price;
+                    cartContainer.innerHTML += `
+                        <div class="cart-item row">
+                            <div class="col-md-8">
+                                <h5>${item.name}</h5>
+                                <h5>Price: $${item.price}</h5>
+                                <p>${item.description}</p>
+                                <p>Availability: From ${item.fromdate} to ${item.todate}</p>
+                            </div>
+                            <div class="col-md-3 text-center">
+                                <img src="${item.image}" alt="${item.name}" class="img-fluid">
+                            </div>
+                            <div class="col-md-1 d-flex justify-content-center align-items-center">
+                                <button class="btn btn-danger" onclick="removeFromCart(${index})">Remove</button>
+                            </div>
+                        </div>
+                    `;
+                });
+
+                cartContainer.innerHTML += `
+                    <div class="mt-4 text-center">
+                        <h3>Total Price: $${totalPrice}</h3>
+                    </div>
+                `;
+            }
+
+            // Event listener for the "Buy" button
+            buyButton.addEventListener("click", function () {
+                alert("Your booking is successful! You can see it in My Bookings.");
+
+                // Move items from cart to bookings
+                let bookings = JSON.parse(localStorage.getItem('bookings')) || [];
+                bookings.push(...cartItems); // Add cart items to bookings
+                localStorage.setItem('bookings', JSON.stringify(bookings));
+
+                // Clear the cart
+                localStorage.removeItem('cart');
+
+                // Reload the cart and bookings
+                loadCart();
+                loadBookings();
+            });
+        }
+
+        // Remove item from cart
+        function removeFromCart(index) {
+            let cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+            cartItems.splice(index, 1);
+            localStorage.setItem('cart', JSON.stringify(cartItems));
+            loadCart(); // Reload the cart after removal
+        }
+
+        // Load bookings to display
+        function loadBookings() {
+            const bookingsContainer = document.getElementById('bookingsContainer');
+            let bookings = JSON.parse(localStorage.getItem('bookings')) || [];
+
+            bookingsContainer.innerHTML = '';
+
+            if (bookings.length === 0) {
+                bookingsContainer.innerHTML = '<div class="cart-empty">No bookings yet.</div>';
+            } else {
+                bookings.forEach((item) => {
+                    bookingsContainer.innerHTML += `
+                        <div class="cart-item row">
+                            <div class="col-md-8">
+                                <h5>${item.name}</h5>
+                                <h5>Price: $${item.price}</h5>
+                                <p>${item.description}</p>
+                                <p>Availability: From ${item.fromdate} to ${item.todate}</p>
+                            </div>
+                            <div class="col-md-3 text-center">
+                                <img src="${item.image}" alt="${item.name}" class="img-fluid">
+                            </div>
+                        </div>
+                    `;
+                });
+            }
+        }
+
+        // Load bookings on page load
+        window.onload = function () {
+            loadBookings();
+        };
+    </script>
+</body>
