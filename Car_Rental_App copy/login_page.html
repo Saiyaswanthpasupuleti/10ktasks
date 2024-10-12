@@ -24,6 +24,7 @@
             background-color: white;
             max-width: 400px;
             width: 100%;
+            
         }
         #center {
             display: flex;
@@ -54,10 +55,10 @@
 </head>
 <body>
     <div id="main">
-        <div id="border">
-            <form id="center">
-                <h3 class="text-center mb-4" style="color: black; text-align: center;font-size: 30px;"><strong>Login</strong></h3>
-                <input type="email" placeholder="Enter your email" id="email" class="form-control" required>
+        <div id="border" style="background-color: white;color: black;">
+            <form id="center" >
+                <h3 class="text-center mb-4" style="color: black; text-align: center;font-size: 30px; color: black;"><strong>Login</strong></h3>
+                <input type="email" placeholder="Enter your email" id="email" autocomplete="additional-name" class="form-control" required>
                 <input type="password" id="password" placeholder="Enter your password" class="form-control" required>
                 
                 <div class="links">
@@ -65,7 +66,7 @@
                     <a href="./signup_page.html" id="signup">Sign Up!</a>
                 </div>
                 
-                <input type="submit" class="btn btn-primary mt-3" value="Login">
+                <input type="submit" class="btn  mt-3" style="color: white; background-color: black; border-radius: 9px;" value="Login">
             </form>
         </div>
     </div>
@@ -73,26 +74,27 @@
     <script src="../bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
     <script>
         document.querySelector("form").addEventListener("submit", function(event) {
-            event.preventDefault(); // Prevent default form submission
-            
-            // Get the form values
+            event.preventDefault(); 
+
             let email = document.getElementById("email").value;
             let password = document.getElementById("password").value;
 
-            // Fetch stored users from localStorage
+
             let users = JSON.parse(localStorage.getItem("users")) || [];
             
 
-            // Check if user exists with the entered email and password
+       
             let user = users.find(u => u.email === email && u.password === password);
+           
+            
 
             if (user) {
                 alert("Login successful!");
-                // Optionally, redirect to another page
-                // window.location.href = "dashboard.html";
+                window.location.href="./index.html"
+               
             } else {
                 alert("Invalid email or password. Please try again.");
-                window.location.href="./index.html"
+                
             }
         });
     </script>
@@ -102,122 +104,3 @@
 
 
 
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Form</title>
-    <link rel="stylesheet" href="../bootstrap-5.3.3-dist/css/bootstrap.min.css">
-    <style>
-        body {
-            background-color: black;
-            color: white;
-            height: 100vh;
-        }
-        #main {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        #border {
-            border: 2px solid #333;
-            border-radius: 10px;
-            padding: 30px;
-            background-color: white;
-            max-width: 400px;
-            width: 100%;
-        }
-        #center {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-        .form-control {
-            padding: 15px;
-            font-size: 16px;
-        }
-        .links {
-            display: flex;
-            justify-content: space-between;
-        }
-        .links a {
-            text-decoration: none;
-            font-size: 14px;
-            color: #007bff;
-        }
-        .btn-primary {
-            width: 100%;
-            padding: 12px;
-        }
-        .links a:hover {
-            text-decoration: underline;
-        }
-        #error-message {
-            color: red;
-            text-align: center;
-        }
-    </style>
-</head>
-<body>
-    <div id="main">
-        <div id="border">
-            <form id="center">
-                <h3 class="text-center mb-4" style="color: black; text-align: center;font-size: 30px;"><strong>Login</strong></h3>
-                <div id="error-message"></div> <!-- Error message placeholder -->
-                <input type="email" placeholder="Enter your email" id="email" class="form-control" required>
-                <div style="position: relative;">
-                    <input type="password" id="password" placeholder="Enter your password" class="form-control" required>
-                    <button type="button" id="togglePassword" style="position: absolute; right: 10px; top: 10px; border:none; background:none;">
-                        👁️
-                    </button>
-                </div>
-                
-                <div class="links">
-                    <a href="./Forgot_password.html">Forgot your password?</a>
-                    <a href="./signup_page.html" id="signup">Sign Up!</a>
-                </div>
-                
-                <input type="submit" class="btn btn-primary mt-3" value="Login">
-            </form>
-        </div>
-    </div>
-
-    <script src="../bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        document.querySelector("form").addEventListener("submit", function(event) {
-            event.preventDefault(); // Prevent default form submission
-            
-            // Get the form values
-            let email = document.getElementById("email").value;
-            let password = document.getElementById("password").value;
-
-            // Fetch stored users from localStorage
-            let users = JSON.parse(localStorage.getItem("users")) || [];
-
-            // Check if user exists with the entered email and password
-            let user = users.find(u => u.email === email && u.password === password);
-
-            if (user) {
-                alert("Login successful!");
-                // Optionally, redirect to another page
-                // window.location.href = "dashboard.html";
-            } else {
-                document.getElementById("error-message").innerText = "Invalid email or password. Please try again.";
-            }
-        });
-
-        // Toggle password visibility
-        const togglePassword = document.getElementById("togglePassword");
-        const passwordField = document.getElementById("password");
-
-        togglePassword.addEventListener("click", function () {
-            const type = passwordField.getAttribute("type") === "password" ? "text" : "password";
-            passwordField.setAttribute("type", type);
-            this.textContent = type === "password" ? "👁️" : "👁️‍🗨️"; // Toggle icon text
-        });
-    </script>
-</body>
-</html>
