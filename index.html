@@ -25,7 +25,7 @@
             padding: 10px 15px; 
             border: 1px solid transparent; 
             border-radius: 5px; 
-            transition: all 0.3s; /
+            transition: all 0.3s;
         }
 
         a:hover {
@@ -41,8 +41,9 @@
         }
     </style>
 </head>
-<body>
+<body id="body">
     <h1><i>All Projects will be uploaded here:</i></h1>
+    <button class="btn btn-dark" id="darkmode">Dark Mode</button>
     <div id="task-list">
         <a href="./keybords.html">1) Keyboard Task</a>
         <a href="./watsapp.html">2) WhatsApp Task</a>
@@ -70,5 +71,25 @@
         <a href="./Car_Rental_App_Demo/index.html">24)Car Rental app</a>
         <p></p>
     </div>
+    <script>
+        let darkmode = document.getElementById("darkmode");
+    darkmode.addEventListener("click", () => {
+    let body = document.getElementById("body");
+    let isDarkMode = body.style.backgroundColor === "black";
+    
+    if (!isDarkMode) {
+        body.style.backgroundColor = "black";
+        body.style.color = "white";
+        darkmode.innerText = "Light Mode";
+     
+    } else {
+        body.style.backgroundColor = "#f4f4f4";
+        body.style.color = "black";
+        darkmode.innerText = "Dark Mode";
+       
+    }
+});
+
+    </script>
 </body>
 </html>
