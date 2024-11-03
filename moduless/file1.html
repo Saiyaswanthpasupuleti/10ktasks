@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="click">click</button>
+    <script>
+        class animal{
+            height="6feet"
+            weight="100kg"
+            
+            method(){
+                console.log(this.height,this.weight)
+            }
+        }
+        let obj=new animal;
+
+        let id=document.getElementById("click")
+        id.addEventListener("click",obj.method.bind(obj))
+       
+    </script>
+</body>
+</html>
+

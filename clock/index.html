@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Clock</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #282c34;
+            color: white;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+        }
+
+        .clock-container {
+            text-align: center;
+        }
+
+        .clock {
+            font-size: 3rem;
+            margin: 20px 0;
+            padding: 20px;
+            border: 2px solid #61dafb;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="clock-container">
+        <h1>Real-Time Clock</h1>
+        <div id="clock" class="clock">00:00:00</div>
+        <button id="toggleFormat">Toggle 24/12 Hour Format</button>
+    </div>
+    <script>
+        let is24HourFormat = true;
+
+        function updateClock() {
+            const now = new Date();
+            let hours = now.getHours();
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+
+            // Format hours for 12-hour clock if necessary
+            let formattedHours = hours;
+            let period = '';
+
+            if (!is24HourFormat) {
+                period = hours >= 12 ? 'PM' : 'AM';
+                formattedHours = hours % 12 || 12; // Convert to 12-hour format
+            }
+
+            // Update the clock display
+            document.getElementById('clock').textContent = `${formattedHours}:${minutes}:${seconds} ${period}`.trim();
+        }
+
+        // Toggle the format between 24-hour and 12-hour
+        document.getElementById('toggleFormat').addEventListener('click', () => {
+            is24HourFormat = !is24HourFormat;
+            updateClock(); // Update clock display immediately after toggling format
+        });
+
+        // Update clock every second
+        setInterval(updateClock, 1000);
+        updateClock(); // Initial call to set clock immediately
+    </script>
+</body>
+</html>
