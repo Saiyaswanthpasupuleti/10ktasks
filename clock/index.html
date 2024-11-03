@@ -36,7 +36,7 @@
         <div id="clock" class="clock">00:00:00</div>
         <button id="toggleFormat">Toggle 24/12 Hour Format</button>
     </div>
-    
+
     <script>
         let is24HourFormat = true;
 
@@ -54,17 +54,16 @@
                 period = hours >= 12 ? 'PM' : 'AM';
                 formattedHours = hours % 12 || 12; // Convert to 12-hour format
             }
-
             // Update the clock display
             document.getElementById('clock').textContent = `${formattedHours}:${minutes}:${seconds} ${period}`.trim();
         }
-
         // Toggle the format between 24-hour and 12-hour
         document.getElementById('toggleFormat').addEventListener('click', () => {
             is24HourFormat = !is24HourFormat;
             updateClock(); // Update clock display immediately after toggling format
         });
 
+        
         // Update clock every second
         setInterval(updateClock, 1000);
         updateClock(); // Initial call to set clock immediately
