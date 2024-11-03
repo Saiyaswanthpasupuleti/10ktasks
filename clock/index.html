@@ -19,6 +19,7 @@
         .clock-container {
             text-align: center;
         }
+        
 
         .clock {
             font-size: 3rem;
@@ -62,11 +63,6 @@
             is24HourFormat = !is24HourFormat;
             updateClock(); // Update clock display immediately after toggling format
         });
-
-
-
-
-        
         // Update clock every second
         setInterval(updateClock, 1000);
         updateClock(); // Initial call to set clock immediately
