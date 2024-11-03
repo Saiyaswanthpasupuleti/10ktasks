@@ -57,7 +57,6 @@
             // Update the clock display
             document.getElementById('clock').textContent = `${formattedHours}:${minutes}:${seconds} ${period}`.trim();
         }
-
         // Toggle the format between 24-hour and 12-hour
         document.getElementById('toggleFormat').addEventListener('click', () => {
             is24HourFormat = !is24HourFormat;
@@ -66,7 +65,7 @@
 
         // Update clock every second
         setInterval(updateClock, 1000);
-        updateClock(); // Initial call to set clock immediately
+        updateClock();
     </script>
 </body>
 </html>
