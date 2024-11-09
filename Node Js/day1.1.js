@@ -4,5 +4,11 @@
 // console.log(mul(1,2))
 
 
-let a=require("./Day1.js")
-console.log(a(1,2))
+// let a=require("./Day1.js")
+// console.log(a(1,2))
+
+// const a=require("./Day1.js")
+
+// console.log(a)
+// let a=require("./Day1.js")
+// console.log(a(1,9))
