@@ -11,9 +11,4 @@ function mul(a,b){
     return a*b
 }
 
-
-module.exports={
-    add,
-    sub,
-    mul
-}
+module.exports=add
