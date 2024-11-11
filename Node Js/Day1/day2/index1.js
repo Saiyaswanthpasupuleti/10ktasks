@@ -55,26 +55,46 @@ server.listen(port,()=>{
 
 
 
-let http=require("http")
-let port=3001
-let server=http.createServer(async (req,res)=>{
-    let url="https://fakestoreapi.com/products"
-
-    try{
-        let responce1=await fetch(url)
-        let responce2=await responce1.json()
-       
-        for(let i=0;i<4;i++){
-            console.log(responce2[i])
-        }
-    }
-    catch(err){
+// let http=require("http")
+// let port=3001
+// let result=""
+// let server=http.createServer(async (req,res)=>{
+//     let url="https://fakestoreapi.com/products"
+//     try{
+//         let responce1=await fetch(url)
+//         let responce2=await responce1.json()
+//         for (let i=0;i<4;i++) {
+//             result+=JSON.stringify(responce2[i])
+//         }
         
-        console.log(err)
-        res.end("Got Some Errors")
-    }
-})
-server.listen(port,()=>{
-    console.log("Can Can !-!")
-})
+//         res.end(result)
+//     }
+//     catch(err){
+//         console.log(err)
+//         res.end("Got Some Errors")
+//     }
+    
+// })
+// server.listen(port,()=>{
+//     console.log("Can Can !-!")
+// })
 
+
+// var http = require("http");
+
+// var server = http.createServer(async(req, res) => {
+
+//     var a= await fetch("https://fakestoreapi.com/products/1");
+
+//     var f=await a.json()
+
+//     console.log(f);
+    
+
+//   res.end(JSON.stringify(f));
+// });
+
+// var port = 3005;
+// server.listen(port, () => {
+//   console.log("hi server started " + port);
+// });
