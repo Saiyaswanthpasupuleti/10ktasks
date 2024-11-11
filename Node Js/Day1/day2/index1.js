@@ -1,6 +1,6 @@
 // create an api with port 5001
-
 /*
+
 
 let http=require("http")
 let port=5001;
@@ -11,7 +11,7 @@ server.listen(port,()=>{
     console.log("Connection is Succesfull vro !")
 })
 
-*/
+
 
 
 
@@ -31,8 +31,10 @@ let obj=[{
     Course:"Node Js"
 }]
 let server=http.createServer((req,res)=>{
-    
-    console.log(req.url=obj)
+    if(req.url=="/"){
+
+    console.log(obj)
+    }
 
     res.end("Finished ._.")
     
@@ -53,25 +55,27 @@ server.listen(port,()=>{
 
 
 
-// let http=require("http")
-// let port=3001
-// let server=http.createServer(async (req,res)=>{
-//     let url="https://fakestoreapi.com/products"
+let http=require("http")
+let port=3001
+let server=http.createServer(async (req,res)=>{
+    let url="https://fakestoreapi.com/products"
 
-//     try{
-//         let responce1=await fetch(url)
-//         let responce2=await responce1.json()
+    try{
+        let responce1=await fetch(url)
+        let responce2=await responce1.json()
        
-//         console.log(responce2[0])
+        console.log(responce2[0])
 
-//     }
-//     catch(err){
+    }
+    catch(err){
         
-//         console.log(err)
-//         res.end("Got Some Errors ")
-//     }
+        console.log(err)
+        res.end("Got Some Errors ")
+    }
 
-// })
-// server.listen(port,()=>{
-//     console.log("Can Can !-!")
-// })
+})
+server.listen(port,()=>{
+    console.log("Can Can !-!")
+})
+
+*/
