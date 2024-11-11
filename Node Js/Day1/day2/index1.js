@@ -45,7 +45,7 @@ server.listen(port,()=>{
     console.log("Can-Can !_!")
 })
 
-
+*/
 
 
 
@@ -64,18 +64,17 @@ let server=http.createServer(async (req,res)=>{
         let responce1=await fetch(url)
         let responce2=await responce1.json()
        
-        console.log(responce2[3])
-
+        for(let i=0;i<4;i++){
+            console.log(responce2[i])
+        }
     }
     catch(err){
         
         console.log(err)
-        res.end("Got Some Errors ")
+        res.end("Got Some Errors")
     }
-
 })
 server.listen(port,()=>{
     console.log("Can Can !-!")
 })
 
-*/
