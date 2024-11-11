@@ -64,7 +64,7 @@ let server=http.createServer(async (req,res)=>{
         let responce1=await fetch(url)
         let responce2=await responce1.json()
        
-        console.log(responce2[0])
+        console.log(responce2[3])
 
     }
     catch(err){
