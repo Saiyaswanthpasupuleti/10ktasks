@@ -98,3 +98,15 @@ server.listen(port,()=>{
 // server.listen(port, () => {
 //   console.log("hi server started " + port);
 // });
+
+
+
+
+let http=require("http")
+let server=http.createServer((req,res)=>{
+    res.end("You ended ")
+
+})
+server.listen(3000,()=>{
+    console.log("Can Can !")
+})
