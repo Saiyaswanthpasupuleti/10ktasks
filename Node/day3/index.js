@@ -60,18 +60,22 @@
 
 
 
-// //http://localhost:3000/?name=sai&age=22
-// let http=require("http")
-// let url=require("url")
-// let server=http.createServer((req,res)=>{
-//    let o1=req.url
-//    let o2=url.parse(o1,true).query
-//    res.end(JSON.stringify(o2))
+//http://localhost:3000/?name=sai&age=22
+
+
+
+
+let http=require("http")
+let url=require("url")
+let server=http.createServer((req,res)=>{
+   let o1=req.url
+   let o2=url.parse(o1,true).query
+console.log(o2)
    
     
-// })
+})
 
-// server.listen(3000,()=>{
-//     console.log("Can Can !")
-// })
+server.listen(3004,()=>{
+    console.log("Can Can !")
+})
 
