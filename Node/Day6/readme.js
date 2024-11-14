@@ -1,7 +1,7 @@
 let http=require("http")
 let fs=require("fs")
 let server=http.createServer((req,res)=>{
-    fs.readFile("./postmethod.txt","utf-8",(err,data)=>{
+    fs.readFile("Node/Day6/a.txt","utf-8",(err,data)=>{
         if(err){
             console.log(err)
         }
@@ -10,6 +10,6 @@ let server=http.createServer((req,res)=>{
         }
     })
 })
-server.listen(3502,()=>{
+server.listen(3003,()=>{
     console.log("Can Can !_!")
 })
