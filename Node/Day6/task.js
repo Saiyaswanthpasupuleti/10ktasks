@@ -95,36 +95,36 @@ server.listen(3000,()=>{
 
 
 
-let http=require("http");
-let server=http.createServer(async (req,res)=>{
-    let a=await fetch("https://fakestoreapi.com/products")
-    let b=await a.json()
+// let http=require("http");
+// let server=http.createServer(async (req,res)=>{
+//     let a=await fetch("https://fakestoreapi.com/products")
+//     let b=await a.json()
     
-    if(req.method==="GET"){
-        console.log("Get",b[0])
-        res.write(JSON.stringify(b[0]))
-    }
-    else if(req.method==="POST"){
-        console.log("POST",b[1])
-        res.write(JSON.stringify(b[1]))
+//     if(req.method==="GET"){
+//         console.log("Get",b[0])
+//         res.write(JSON.stringify(b[0]))
+//     }
+//     else if(req.method==="POST"){
+//         console.log("POST",b[1])
+//         res.write(JSON.stringify(b[1]))
 
-    }
-    else if(req.method==="PUT"){
-        console.log("PUT",b[2])
-        res.write(JSON.stringify(b[2]))
+//     }
+//     else if(req.method==="PUT"){
+//         console.log("PUT",b[2])
+//         res.write(JSON.stringify(b[2]))
 
-    }
-    else if(req.method==="DELETE"){
-        console.log("DELETE",b[3])
-        res.write(JSON.stringify(b[3]))
+//     }
+//     else if(req.method==="DELETE"){
+//         console.log("DELETE",b[3])
+//         res.write(JSON.stringify(b[3]))
 
-    }
-    else{
-        res.end(JSON.stringify("Server Stopped"))
-        console.log("Ended")
-    }
+//     }
+//     else{
+//         res.end(JSON.stringify("Server Stopped"))
+//         console.log("Ended")
+//     }
 
-})
-server.listen(3000,()=>{
-    console.log("Can Can !_!")
-})
+// })
+// server.listen(3000,()=>{
+//     console.log("Can Can !_!")
+// })
