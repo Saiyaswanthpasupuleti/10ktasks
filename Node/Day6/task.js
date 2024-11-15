@@ -106,6 +106,7 @@ let server=http.createServer(async (req,res)=>{
             return val.id==id
         })
         console.log(x[0])
+    
     }
     else if(req.method==="POST"){
         let id=1
