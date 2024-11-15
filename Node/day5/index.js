@@ -7,7 +7,7 @@ let server=http.createServer((req,res)=>{
         }
         else{
             let array=JSON.parse(data)
-            let obj={skill:"js"}
+            let obj={skill:"html"}
             array.push(obj)
             fs.writeFile("./result.txt",JSON.stringify(array),(err,data)=>{
                 if(err){
