@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notes App</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      margin-top: 50px;
+    }
+    .note-container {
+      background-color: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .note-title {
+      font-weight: bold;
+    }
+    .note-content {
+      margin-top: 10px;
+    }
+    .note-actions {
+      display: flex;
+      justify-content: space-between;
+    }
+    .note-actions button {
+      width: 45%;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">Notes App</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="login.html">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="signup.html">Sign Up</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="forgotpassword.html">Forgot Password</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html" id="logout">Logout</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <h1 class="text-center mb-4">Your Notes</h1>
+
+  <div class="note-container mt-5">
+    <h3>Add a New Note</h3>
+    <form id="note-form">
+      <div class="mb-3">
+        <label for="note-title" class="form-label">Title</label>
+        <input type="text" id="note-title" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label for="note-content" class="form-label">Content</label>
+        <textarea id="note-content" class="form-control" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Save Note</button>
+    </form>
+  </div>
+
+  <div id="notes-list" class="mt-5"></div>
+</div>
+
+<script>
+  const noteForm = document.getElementById("note-form");
+  const notesList = document.getElementById("notes-list");
+
+  // Load notes from localStorage or an external database (if set up)
+  function loadNotes() {
+    const notes = JSON.parse(localStorage.getItem("notes")) || [];
+    displayNotes(notes);
+  }
+
+  // Display notes on the page
+  function displayNotes(notes) {
+    notesList.innerHTML = "";
+    notes.forEach(note => {
+      const noteDiv = document.createElement("div");
+      noteDiv.classList.add("note");
+      noteDiv.innerHTML = `
+        <h4 class="note-title">${note.title}</h4>
+        <p class="note-content">${note.content.slice(0, 100)}...</p>
+        <div class="note-actions">
+          <button class="btn btn-warning" onclick="editNote('${note.id}')">Edit</button>
+          <button class="btn btn-danger" onclick="deleteNote('${note.id}')">Delete</button>
+        </div>
+      `;
+      notesList.appendChild(noteDiv);
+    });
+  }
+
+  // Handle note form submission
+  noteForm.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const noteTitle = document.getElementById("note-title").value;
+    const noteContent = document.getElementById("note-content").value;
+
+    const newNote = {
+      id: Date.now().toString(),
+      title: noteTitle,
+      content: noteContent
+    };
+
+    const notes = JSON.parse(localStorage.getItem("notes")) || [];
+    notes.push(newNote);
+    localStorage.setItem("notes", JSON.stringify(notes));
+
+    loadNotes();
+    noteForm.reset();
+  });
+
+  // Edit a note
+  function editNote(noteId) {
+    const notes = JSON.parse(localStorage.getItem("notes")) || [];
+    const note = notes.find(n => n.id === noteId);
+    if (note) {
+      document.getElementById("note-title").value = note.title;
+      document.getElementById("note-content").value = note.content;
+      noteForm.removeEventListener("submit", addNote);
+      noteForm.addEventListener("submit", function(event) {
+        event.preventDefault();
+        note.title = document.getElementById("note-title").value;
+        note.content = document.getElementById("note-content").value;
+
+        localStorage.setItem("notes", JSON.stringify(notes));
+        loadNotes();
+        noteForm.reset();
+        noteForm.addEventListener("submit", addNote);
+      });
+    }
+  }
+
+  // Delete a note
+  function deleteNote(noteId) {
+    let notes = JSON.parse(localStorage.getItem("notes")) || [];
+    notes = notes.filter(note => note.id !== noteId);
+    localStorage.setItem("notes", JSON.stringify(notes));
+    loadNotes();
+  }
+
+  // Load notes on page load
+  window.onload = loadNotes;
+
+  // Add a new note to the list
+  function addNote() {
+    // Code to add a new note goes here...
+  }
+
+  // Logout functionality (for localStorage simulation)
+  const logoutButton = document.getElementById("logout");
+  logoutButton.addEventListener("click", function() {
+    localStorage.removeItem("loggedInUser");
+    window.location.href = "login.html";
+  });
+</script>
+
+</body>
+</html>
